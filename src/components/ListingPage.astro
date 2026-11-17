@@ -7,7 +7,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ItemCard from './ItemCard.astro';
-import { type Item, type SortKey, SORTS, sortItems, updatedLabel } from '../lib/furusato';
+import { type Item, type SortKey, SORTS, breadcrumbJsonLd, itemListJsonLd, sortItems, updatedLabel } from '../lib/furusato';
 
 interface Props {
   heading: string;
@@ -24,11 +24,22 @@ const { heading, lead, basePath, sort, items, siblings, siblingsLabel } = Astro.
 const current = SORTS.find((s) => s.key === sort)!;
 const sorted = sortItems(items, sort);
 const title = sort === 'cospa' ? heading : `${heading}（${current.label}）`;
+// 構造化データ。ItemList は正規 URL（コスパ順）のページにだけ出す。並び替えページは canonical で正規 URL に寄せているため
+const jsonLd: Record<string, unknown>[] = [
+  breadcrumbJsonLd(
+    [
+      { name: 'トップ', path: '/' },
+      { name: heading, path: basePath },
+    ],
+    Astro.site,
+  ),
+];
+if (sort === 'cospa' && sorted.length > 0) jsonLd.push(itemListJsonLd(heading, sorted));
 const description = `${heading}。${items.length}件の返礼品を${current.label}で掲載。1,000円あたり・1万円あたりの内容量で比較できます。`;
 ---
 
 <!-- 並び替えページは掲載商品が同じなので、canonical は既定（コスパ順）の URL に寄せる -->
-<BaseLayout title={title} description={description} canonicalPath={basePath}>
+<BaseLayout title={title} description={description} canonicalPath={basePath} jsonLd={jsonLd}>
   <div class="container-page py-8 sm:py-10">
     <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
       <a href="/" class="hover:underline">トップ</a>

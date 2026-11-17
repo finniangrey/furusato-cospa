@@ -145,6 +145,19 @@ def parse_municipality(*texts: str) -> str:
     return ""
 
 
+def is_furusato(*texts: Optional[str]) -> bool:
+    """商品名・キャッチコピー・店舗名のいずれかに「ふるさと納税」を含むか。
+
+    「ふるさと納税 牛肉」で検索しても通常の市販品が混ざるので、実データ取得時はこれで弾く。
+    半角カナ・空白入りの表記ゆれ（「ふるさと 納税」「ﾌﾙｻﾄ納税」）も拾う。
+    """
+    for text in texts:
+        compact = re.sub(r"\s+", "", unicodedata.normalize("NFKC", text or ""))
+        if "ふるさと納税" in compact or "フルサト納税" in compact:
+            return True
+    return False
+
+
 # ---------------------------------------------------------------------------
 # コスパ計算
 # ---------------------------------------------------------------------------
@@ -360,6 +373,7 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
     affiliate_id = os.environ.get("RAKUTEN_AFFILIATE_ID", "").strip()
     items: list[dict[str, Any]] = []
     skipped = 0
+    not_furusato = 0  # 「ふるさと納税」表記が無く、一般商品とみなして除外した件数
     api_errors = 0  # 連続した HTTP エラーの回数
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
@@ -395,7 +409,8 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
             for raw in data.get("Items", []):
                 raw = raw.get("Item", raw)  # formatVersion=1 の入れ子にも対応
                 name = raw.get("itemName", "")
-                if "ふるさと納税" not in name:
+                if not is_furusato(name, raw.get("catchcopy"), raw.get("shopName")):
+                    not_furusato += 1
                     continue
                 images = raw.get("mediumImageUrls") or []
                 image = images[0] if images else ""
@@ -419,7 +434,12 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
                 else:
                     skipped += 1
             time.sleep(REQUEST_INTERVAL)
-    log.info("楽天: %d 件取得（内容量を抽出できない・異常値などで除外 %d 件）", len(items), skipped)
+    log.info(
+        "楽天: %d 件取得（「ふるさと納税」表記なしで除外 %d 件／内容量を抽出できない・異常値などで除外 %d 件）",
+        len(items),
+        not_furusato,
+        skipped,
+    )
     return items
 
 
@@ -429,6 +449,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
     affiliate_id = os.environ.get("YAHOO_AFFILIATE_ID", "").strip()
     items: list[dict[str, Any]] = []
     skipped = 0
+    not_furusato = 0  # 「ふるさと納税」表記が無く、一般商品とみなして除外した件数
     api_errors = 0  # 連続した HTTP エラーの回数
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
@@ -461,7 +482,9 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
             api_errors = 0
             for raw in data.get("hits", []):
                 name = raw.get("name", "")
-                if "ふるさと納税" not in name:
+                seller = raw.get("seller") or {}
+                if not is_furusato(name, raw.get("headLine"), seller.get("name")):
+                    not_furusato += 1
                     continue
                 review = raw.get("review") or {}
                 item = build_item(
@@ -472,7 +495,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                     price=int(raw.get("price") or 0),
                     url=raw.get("url", ""),
                     image=(raw.get("image") or {}).get("medium", ""),
-                    shop=(raw.get("seller") or {}).get("name", ""),
+                    shop=seller.get("name", ""),
                     review_average=review.get("rate") or 0,
                     review_count=review.get("count") or 0,
                     in_stock=bool(raw.get("inStock", True)),
@@ -482,7 +505,12 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                 else:
                     skipped += 1
             time.sleep(REQUEST_INTERVAL)
-    log.info("Yahoo: %d 件取得（内容量を抽出できない・異常値などで除外 %d 件）", len(items), skipped)
+    log.info(
+        "Yahoo: %d 件取得（「ふるさと納税」表記なしで除外 %d 件／内容量を抽出できない・異常値などで除外 %d 件）",
+        len(items),
+        not_furusato,
+        skipped,
+    )
     return items
 
 
@@ -546,7 +574,21 @@ def self_test() -> int:
         failed += not ok
         print(f"{'OK ' if ok else 'NG '} 外れ値ガード: {name}（{price}円） -> {'掲載' if got else '除外'}")
 
-    total = len(cases) + len(guard_cases)
+    # ふるさと納税フィルタ: ((商品名, キャッチコピー, 店舗名), 返礼品とみなすか)
+    furusato_cases: list[tuple[tuple[Optional[str], Optional[str], Optional[str]], bool]] = [
+        (("【ふるさと納税】豚肉 切り落とし 4kg", "", "宮崎県都城市"), True),
+        (("豚肉 切り落とし 4kg", "ふるさと納税 人気の返礼品", "精肉店"), True),
+        (("豚肉 切り落とし 4kg", None, "ふるさと納税　宮崎県都城市"), True),
+        (("【ふるさと 納税】ホタテ 1kg", "", ""), True),
+        (("国産 豚肉 切り落とし 4kg 業務用 送料無料", "お買い得", "肉の卸問屋"), False),
+        (("ふるさとの味 みかん 10kg", None, None), False),
+    ]
+    for texts, expected in furusato_cases:
+        ok = is_furusato(*texts) == expected
+        failed += not ok
+        print(f"{'OK ' if ok else 'NG '} ふるさと納税フィルタ: {texts} -> {'返礼品' if is_furusato(*texts) else '除外'}")
+
+    total = len(cases) + len(guard_cases) + len(furusato_cases)
     print(f"{total - failed}/{total} passed")
     return 1 if failed else 0
 

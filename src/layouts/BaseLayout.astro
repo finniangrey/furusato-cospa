@@ -10,15 +10,26 @@ interface Props {
   noindex?: boolean;
   /** canonical に指定するパス。並び替えページなど、内容が重複するページで正規 URL を指すために使う */
   canonicalPath?: string;
+  /** Schema.org JSON-LD（複数可） */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 // サンプルデータ（架空の商品）を表示している間は、検索エンジンに登録させない
-const { title, description = SITE.description, noindex = isSampleMode, canonicalPath = Astro.url.pathname } = Astro.props;
+const {
+  title,
+  description = SITE.description,
+  noindex = isSampleMode,
+  canonicalPath = Astro.url.pathname,
+  jsonLd,
+} = Astro.props;
 
 const pageTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
 const canonical = new URL(canonicalPath, Astro.site).href;
 // GA4 測定 ID。ビルド時の環境変数 PUBLIC_GA_ID が空でなければ gtag.js を出力する
 const gaId = (import.meta.env.PUBLIC_GA_ID ?? '').trim();
+const jsonLdList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+// </script> の混入で JSON-LD が壊れないようエスケープする
+const serialize = (data: unknown) => JSON.stringify(data).replace(/</g, '\\u003c');
 ---
 
 <!doctype html>
@@ -41,6 +52,10 @@ const gaId = (import.meta.env.PUBLIC_GA_ID ?? '').trim();
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+
+    {jsonLdList.map((data) => <script type="application/ld+json" set:html={serialize(data)} />)}
 
     {
       gaId && (

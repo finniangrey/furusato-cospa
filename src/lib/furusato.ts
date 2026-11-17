@@ -142,3 +142,39 @@ export const SOURCE_LABEL: Record<Source, string> = {
   yahoo: 'Yahoo!ショッピング',
   sample: '楽天市場',
 };
+
+// ---------------------------------------------------------------------------
+// 構造化データ（Schema.org JSON-LD）
+// ---------------------------------------------------------------------------
+
+/** パンくずリスト。crumbs はトップから順に { name, path }。site は Astro.site */
+export function breadcrumbJsonLd(crumbs: { name: string; path: string }[], site: URL | undefined) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: new URL(c.path, site).href,
+    })),
+  };
+}
+
+/** ランキングの上位商品。list は表示順に並べ済みのもの。url は各商品の販売ページ（アフィリエイトリンク） */
+export function itemListJsonLd(name: string, list: Item[], limit = 20) {
+  const top = list.slice(0, limit);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    itemListOrder: 'https://schema.org/ItemListOrderDescending',
+    numberOfItems: top.length,
+    itemListElement: top.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}

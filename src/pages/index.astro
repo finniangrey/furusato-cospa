@@ -6,7 +6,9 @@ import {
   PRICE_BANDS,
   SITE,
   bandPath,
+  breadcrumbJsonLd,
   categoryPath,
+  itemListJsonLd,
   items,
   itemsInBand,
   itemsInCategory,
@@ -15,9 +17,14 @@ import {
 } from '../lib/furusato';
 
 const ranking = overallRanking(20);
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL('/', Astro.site).href, description: SITE.description },
+  breadcrumbJsonLd([{ name: 'トップ', path: '/' }], Astro.site),
+  itemListJsonLd(`ふるさと納税 総合コスパランキング TOP${ranking.length}`, ranking),
+];
 ---
 
-<BaseLayout>
+<BaseLayout jsonLd={jsonLd}>
   <section class="bg-matsu-700 text-white">
     <div class="container-page py-10 sm:py-14">
       <p class="text-xs font-bold tracking-widest text-matsu-200">{updatedLabel} 更新 ／ 掲載 {items.length}件</p>
