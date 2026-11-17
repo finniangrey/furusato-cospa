@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ItemCard from '../components/ItemCard.astro';
+import {
+  CATEGORIES,
+  PRICE_BANDS,
+  SITE,
+  bandPath,
+  categoryPath,
+  items,
+  itemsInBand,
+  itemsInCategory,
+  overallRanking,
+  updatedLabel,
+} from '../lib/furusato';
+
+const ranking = overallRanking(20);
+---
+
+<BaseLayout>
+  <section class="bg-matsu-700 text-white">
+    <div class="container-page py-10 sm:py-14">
+      <p class="text-xs font-bold tracking-widest text-matsu-200">{updatedLabel} 更新 ／ 掲載 {items.length}件</p>
+      <h1 class="mt-3 font-display text-3xl font-bold leading-snug tracking-wide sm:text-4xl">
+        同じ寄付額なら、<br class="sm:hidden" />量が多いほうを。
+      </h1>
+      <p class="mt-4 max-w-2xl text-sm leading-relaxed text-matsu-100 sm:text-base">
+        {SITE.name}は、ふるさと納税の返礼品を「寄付額1,000円あたりの内容量」で並べ替えたデータベースです。
+        肉・魚介・米・フルーツ・日用品を、グラム単価や個数単価で比べられます。
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm font-bold">
+        <a href="#ranking" class="rounded-md bg-kaki-500 px-5 py-3 hover:bg-kaki-600">総合ランキングを見る</a>
+        <a href="/simulator/" class="rounded-md border border-white/60 px-5 py-3 hover:bg-white/10">控除上限額を計算する</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="container-page pt-10">
+    <h2 class="section-title">金額帯から探す</h2>
+    <ul class="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+      {
+        PRICE_BANDS.map((band) => (
+          <li>
+            <a href={bandPath(band.slug)} class="tile">
+              <span class="text-lg font-bold text-matsu-900">{band.label}</span>
+              <span class="text-xs text-sumi/60">{itemsInBand(band).length}件の返礼品</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section id="category" class="container-page pt-10">
+    <h2 class="section-title">カテゴリから探す</h2>
+    <ul class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      {
+        CATEGORIES.map((c) => (
+          <li>
+            <a href={categoryPath(c.slug)} class="tile items-center text-center">
+              <span class="text-4xl" aria-hidden="true">{c.emoji}</span>
+              <span class="mt-1 text-lg font-bold text-matsu-900">{c.label}</span>
+              <span class="text-xs text-sumi/60">{itemsInCategory(c.slug).length}件</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section id="ranking" class="container-page pt-12">
+    <h2 class="section-title">総合コスパランキング TOP{ranking.length}</h2>
+    <p class="mt-2 max-w-3xl text-sm text-sumi/80">
+      単位が違う商品（g とロールなど）を比べるため、「同じカテゴリ・同じ単位の中央値と比べて何倍の内容量か」を指数にして順位を付けています。
+      在庫ありの商品のみ。<a href="/about/" class="underline">算出方法</a>
+    </p>
+    <ol class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        ranking.map((item, i) => (
+          <li class="flex [&>article]:w-full">
+            <ItemCard item={item} rank={i + 1} />
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="container-page pt-12">
+    <div class="flex flex-col items-start gap-4 rounded-lg border border-matsu-200 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h2 class="font-display text-xl font-bold text-matsu-900">いくらまで寄付できる？</h2>
+        <p class="mt-1 text-sm text-sumi/80">年収と家族構成から、自己負担2,000円で済む寄付額の目安を計算できます。</p>
+      </div>
+      <a href="/simulator/" class="shrink-0 rounded-md bg-matsu-700 px-5 py-3 text-sm font-bold text-white hover:bg-matsu-600">
+        控除上限額シミュレーター
+      </a>
+    </div>
+  </section>
+</BaseLayout>

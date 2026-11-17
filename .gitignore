@@ -1,0 +1,23 @@
+# 依存パッケージ・ビルド成果物（コミットしない）
+node_modules/
+dist/
+.astro/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 環境変数・シークレット
+.env
+.env.*
+!.env.example
+
+# OS・エディタ・ツール
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+.wrangler/

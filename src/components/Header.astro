@@ -1,0 +1,27 @@
+---
+import { SITE } from '../lib/furusato';
+---
+
+<p class="bg-matsu-900 px-4 py-1 text-center text-[11px] text-matsu-100">
+  【PR】本サイトはアフィリエイト広告を利用しています
+</p>
+<header class="sticky top-0 z-40 border-b border-matsu-100 bg-kinari/95 backdrop-blur">
+  <div class="container-page flex h-14 items-center justify-between gap-2 sm:h-16 sm:gap-4">
+    <a href="/" class="flex shrink-0 items-center gap-2 whitespace-nowrap" aria-label={`${SITE.name} トップへ`}>
+      <img src="/favicon.svg" alt="" class="h-7 w-7 sm:h-8 sm:w-8" />
+      <span class="font-display text-sm font-bold tracking-wide text-matsu-900 sm:text-xl">{SITE.name}</span>
+    </a>
+    <nav aria-label="グローバルナビゲーション">
+      <ul class="flex items-center gap-1 text-[13px] font-bold text-matsu-700 sm:gap-3 sm:text-sm">
+        <li class="hidden md:block"><a class="rounded px-2 py-2 hover:bg-matsu-50" href="/#ranking">ランキング</a></li>
+        <li class="hidden sm:block"><a class="rounded px-2 py-2 hover:bg-matsu-50" href="/#category">カテゴリ</a></li>
+        <li class="hidden sm:block"><a class="rounded px-2 py-2 hover:bg-matsu-50" href="/#price">金額帯</a></li>
+        <li>
+          <a class="whitespace-nowrap rounded bg-matsu-700 px-3 py-2 text-white hover:bg-matsu-600" href="/simulator/">
+            控除上限<span class="sr-only sm:not-sr-only">シミュレーター</span><span class="sm:hidden">を計算</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+---
+import type { GetStaticPaths } from 'astro';
+import ListingPage from '../../../components/ListingPage.astro';
+import { type CategorySlug, type SortKey, CATEGORIES, SORTS, categoryOf, categoryPath, itemsInCategory } from '../../../lib/furusato';
+
+/** カテゴリ × 並び順の全組み合わせを生成する。既定の並び順（コスパ順）は sort なしの URL */
+export const getStaticPaths = (() =>
+  CATEGORIES.flatMap((c) =>
+    SORTS.map((s) => ({
+      params: { category: c.slug, sort: s.slug || undefined },
+      props: { category: c.slug, sort: s.key },
+    })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  category: CategorySlug;
+  sort: SortKey;
+}
+
+const { category, sort } = Astro.props;
+const meta = categoryOf(category);
+const sortSuffix = SORTS.find((s) => s.key === sort)!.slug;
+---
+
+<ListingPage
+  heading={`${meta.label}の返礼品コスパランキング`}
+  lead={meta.lead}
+  basePath={categoryPath(category)}
+  sort={sort}
+  items={itemsInCategory(category)}
+  siblingsLabel="カテゴリ"
+  siblings={CATEGORIES.map((c) => ({
+    label: `${c.emoji} ${c.label}`,
+    href: categoryPath(c.slug) + (sortSuffix ? `${sortSuffix}/` : ''),
+    current: c.slug === category,
+  }))}
+/>

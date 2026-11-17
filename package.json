@@ -1,0 +1,29 @@
+{
+  "name": "furusato-cospa",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ふるさと納税 実質コスパ比較データベース — 返礼品を1,000円あたりの内容量で比較",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "fetch": "python scripts/fetch_furusato.py",
+    "fetch:sample": "python scripts/fetch_furusato.py --sample",
+    "test:parser": "python scripts/fetch_furusato.py --self-test"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.5",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.12",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^6.0.3"
+  }
+}

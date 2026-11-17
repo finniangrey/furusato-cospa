@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PRICE_BANDS, bandPath, itemsInBand } from '../lib/furusato';
+
+const bands = PRICE_BANDS.map((b) => ({ ...b, count: itemsInBand(b).length }));
+---
+
+<BaseLayout
+  title="ふるさと納税 控除上限額シミュレーター"
+  description="年収と家族構成を入れるだけで、自己負担2,000円で済むふるさと納税の寄付上限額の目安を計算。上限額に合う金額帯の返礼品へそのまま進めます。"
+>
+  <div class="container-page py-8 sm:py-10">
+    <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
+      <a href="/" class="hover:underline">トップ</a>
+      <span aria-hidden="true"> › </span>
+      <span>控除上限額シミュレーター</span>
+    </nav>
+    <h1 class="section-title mt-3 sm:text-3xl">控除上限額シミュレーター</h1>
+    <p class="mt-3 max-w-3xl text-sm text-sumi/80">
+      給与収入（額面年収）と家族構成から、自己負担2,000円で済む寄付額の目安を計算します。入力内容はブラウザ内だけで計算され、送信されません。
+    </p>
+
+    <div class="mt-8 grid gap-6 lg:grid-cols-2">
+      <form id="simulator" class="space-y-5 rounded-lg border border-matsu-100 bg-white p-5 sm:p-6" novalidate>
+        <div>
+          <label for="income" class="text-sm font-bold">あなたの年収（額面）</label>
+          <div class="mt-1.5 flex items-center gap-2">
+            <input id="income" name="income" type="number" inputmode="numeric" min="0" max="10000" step="10" value="500" class="field" />
+            <span class="shrink-0 text-sm font-bold">万円</span>
+          </div>
+          <p class="mt-1 text-xs text-sumi/60">源泉徴収票の「支払金額」にあたる金額です。</p>
+        </div>
+
+        <fieldset>
+          <legend class="text-sm font-bold">配偶者</legend>
+          <div class="mt-1.5 space-y-1.5 text-sm">
+            <label class="flex items-center gap-2">
+              <input type="radio" name="spouse" value="0" checked class="accent-matsu-700" />
+              独身、または共働き（配偶者控除なし）
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="radio" name="spouse" value="1" class="accent-matsu-700" />
+              配偶者を扶養している（配偶者控除あり）
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="general" class="text-sm font-bold">高校生の子ども<span class="block text-xs font-normal text-sumi/60">16〜18歳</span></label>
+            <select id="general" name="general" class="field mt-1.5">
+              {[0, 1, 2, 3, 4].map((n) => <option value={n}>{n}人</option>)}
+            </select>
+          </div>
+          <div>
+            <label for="specific" class="text-sm font-bold">大学生の子ども<span class="block text-xs font-normal text-sumi/60">19〜22歳</span></label>
+            <select id="specific" name="specific" class="field mt-1.5">
+              {[0, 1, 2, 3, 4].map((n) => <option value={n}>{n}人</option>)}
+            </select>
+          </div>
+        </div>
+        <p class="text-xs text-sumi/60">中学生以下の子どもは扶養控除の対象外のため、人数に含めません。</p>
+      </form>
+
+      <section aria-live="polite" class="rounded-lg border border-kaki-100 bg-kaki-50 p-5 sm:p-6">
+        <h2 class="text-sm font-bold text-kaki-700">寄付上限額の目安</h2>
+        <p class="mt-1 font-display text-4xl font-bold text-kaki-700 sm:text-5xl">
+          <span id="limit">—</span><span class="ml-1 text-xl">円</span>
+        </p>
+        <p id="limit-note" class="mt-2 text-sm text-sumi/80"></p>
+
+        <h3 class="mt-6 text-sm font-bold text-matsu-900">この上限額で選べる金額帯</h3>
+        <ul id="bands" class="mt-2 grid grid-cols-2 gap-2">
+          {
+            bands.map((b) => (
+              <li>
+                <a href={bandPath(b.slug)} data-band-min={b.min} class="tile h-full p-3 aria-disabled:pointer-events-none aria-disabled:opacity-40">
+                  <span class="font-bold text-matsu-900">{b.label}</span>
+                  <span class="text-xs text-sumi/60">{b.count}件</span>
+                  <span data-band-hint class="mt-1 text-xs font-bold text-kaki-700" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </div>
+
+    <div class="prose-doc mt-10 max-w-3xl">
+      <h2>計算の前提と注意点</h2>
+      <ul>
+        <li>給与所得者を想定した<strong>概算</strong>です。社会保険料は年収の15%と仮定しています。</li>
+        <li>住宅ローン控除・医療費控除・iDeCo・生命保険料控除などがある場合、実際の上限額はこの目安より低くなります。</li>
+        <li>給与所得控除・基礎控除は令和7年度税制改正後の金額で計算しています。</li>
+        <li>正確な金額は、お住まいの市区町村や税理士にご確認ください。上限を超えた分は自己負担になります。</li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { estimateLimit } from '../scripts/simulator';
+
+  const form = document.querySelector<HTMLFormElement>('#simulator')!;
+  const limitEl = document.querySelector<HTMLElement>('#limit')!;
+  const noteEl = document.querySelector<HTMLElement>('#limit-note')!;
+  const bandLinks = [...document.querySelectorAll<HTMLAnchorElement>('#bands a')];
+
+  const update = () => {
+    const data = new FormData(form);
+    const incomeMan = Number(data.get('income'));
+    const limit = estimateLimit({
+      income: incomeMan * 10_000,
+      spouse: data.get('spouse') === '1',
+      dependentsGeneral: Number(data.get('general')),
+      dependentsSpecific: Number(data.get('specific')),
+    });
+
+    limitEl.textContent = limit > 0 ? limit.toLocaleString('ja-JP') : '—';
+    noteEl.textContent =
+      limit > 0
+        ? `この金額までの寄付なら、自己負担は実質2,000円です。1万円の返礼品なら${Math.floor(limit / 10_000)}件分。`
+        : incomeMan > 0
+          ? 'この条件では住民税の所得割がかからず、控除を受けられない可能性があります。'
+          : '年収を入力してください。';
+
+    for (const link of bandLinks) {
+      const min = Number(link.dataset.bandMin);
+      const available = limit > min;
+      link.setAttribute('aria-disabled', String(!available));
+      link.tabIndex = available ? 0 : -1;
+      const hint = link.querySelector<HTMLElement>('[data-band-hint]')!;
+      // その金額帯の下限額で何件頼めるか（1万円以下の帯は 5,000 円を目安にする）
+      const unit = min > 0 ? min : 5_000;
+      hint.textContent = available ? `約${Math.floor(limit / unit)}件まで` : '上限額を超えます';
+    }
+  };
+
+  form.addEventListener('input', update);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  update();
+</script>

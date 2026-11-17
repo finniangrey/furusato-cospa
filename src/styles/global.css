@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* 松葉（落ち着き・産地）× 柿（お得・行動）× 生成り */
+  --color-matsu-50: #eef5f1;
+  --color-matsu-100: #d7e7de;
+  --color-matsu-200: #b0cfbf;
+  --color-matsu-500: #2f7556;
+  --color-matsu-600: #275f47;
+  --color-matsu-700: #1f4d3a;
+  --color-matsu-900: #122c22;
+  --color-kaki-50: #fdf3ea;
+  --color-kaki-100: #fbe2cc;
+  --color-kaki-500: #e2702a;
+  --color-kaki-600: #c25a1b;
+  --color-kaki-700: #9d4714;
+  --color-kinari: #f7f4ec;
+  --color-sumi: #1c2230;
+
+  --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  --font-display: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-kinari text-sumi font-sans antialiased;
+    font-feature-settings: "palt";
+    line-height: 1.8;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-kaki-500;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      transition: none !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-sm px-2 py-0.5 text-xs font-bold leading-5 whitespace-nowrap;
+  }
+  .field {
+    @apply h-11 w-full rounded-md border border-matsu-200 bg-white px-3 text-sm text-sumi;
+  }
+  .section-title {
+    @apply font-display text-2xl font-bold tracking-wide text-matsu-900;
+  }
+  .tile {
+    @apply flex flex-col rounded-lg border border-matsu-100 bg-white p-4 transition hover:border-matsu-500 hover:shadow-sm;
+  }
+
+  /* 長文ページ（算出方法・免責事項）の本文スタイル */
+  .prose-doc {
+    @apply text-[0.95rem] leading-loose text-sumi;
+  }
+  .prose-doc > * + * {
+    @apply mt-5;
+  }
+  .prose-doc h2 {
+    @apply mt-12 scroll-mt-24 border-l-4 border-kaki-500 pl-3 font-display text-xl font-bold leading-snug tracking-wide text-matsu-900 sm:text-2xl;
+  }
+  .prose-doc a {
+    @apply text-matsu-600 underline underline-offset-2 hover:text-matsu-900;
+  }
+  .prose-doc ul {
+    @apply list-disc space-y-1.5 pl-6;
+  }
+  .prose-doc li::marker {
+    @apply text-matsu-500;
+  }
+}

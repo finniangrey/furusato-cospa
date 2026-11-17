@@ -1,0 +1,41 @@
+---
+import type { GetStaticPaths } from 'astro';
+import ListingPage from '../../../components/ListingPage.astro';
+import { type SortKey, PRICE_BANDS, SORTS, bandPath, itemsInBand } from '../../../lib/furusato';
+
+/** 金額帯 × 並び順の全組み合わせを生成する。既定の並び順（コスパ順）は sort なしの URL */
+export const getStaticPaths = (() =>
+  PRICE_BANDS.flatMap((b) =>
+    SORTS.map((s) => ({
+      params: { band: b.slug, sort: s.slug || undefined },
+      props: { band: b.slug, sort: s.key },
+    })),
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  band: string;
+  sort: SortKey;
+}
+
+const { band: bandSlug, sort } = Astro.props;
+const band = PRICE_BANDS.find((b) => b.slug === bandSlug)!;
+const sortSuffix = SORTS.find((s) => s.key === sort)!.slug;
+const range =
+  band.max === Infinity
+    ? `寄付額が${band.min.toLocaleString('ja-JP')}円を超える`
+    : `寄付額が${band.min > 0 ? `${band.min.toLocaleString('ja-JP')}円を超え、` : ''}${band.max.toLocaleString('ja-JP')}円以下の`;
+---
+
+<ListingPage
+  heading={`寄付額${band.label}の返礼品コスパランキング`}
+  lead={`${range}返礼品を、カテゴリをまたいで比較しています。控除上限額に合わせて選びたいときに便利です。`}
+  basePath={bandPath(band.slug)}
+  sort={sort}
+  items={itemsInBand(band)}
+  siblingsLabel="金額帯"
+  siblings={PRICE_BANDS.map((b) => ({
+    label: b.label,
+    href: bandPath(b.slug) + (sortSuffix ? `${sortSuffix}/` : ''),
+    current: b.slug === band.slug,
+  }))}
+/>

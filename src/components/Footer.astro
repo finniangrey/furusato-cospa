@@ -1,0 +1,44 @@
+---
+import { CATEGORIES, PRICE_BANDS, SITE, bandPath, categoryPath, updatedLabel } from '../lib/furusato';
+---
+
+<footer class="mt-16 border-t border-matsu-100 bg-matsu-900 text-matsu-100">
+  <div class="container-page grid gap-8 py-10 text-sm sm:grid-cols-3">
+    <div>
+      <p class="font-display text-lg font-bold text-white">{SITE.name}</p>
+      <p class="mt-2 text-xs leading-relaxed">{SITE.tagline}</p>
+      <p class="mt-3 text-xs">データ更新日: {updatedLabel}</p>
+    </div>
+    <nav aria-label="カテゴリ">
+      <p class="font-bold text-white">カテゴリから探す</p>
+      <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+        {CATEGORIES.map((c) => <li><a class="hover:underline" href={categoryPath(c.slug)}>{c.label}</a></li>)}
+      </ul>
+      <p class="mt-4 font-bold text-white">金額帯から探す</p>
+      <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+        {PRICE_BANDS.map((b) => <li><a class="hover:underline" href={bandPath(b.slug)}>{b.label}</a></li>)}
+      </ul>
+    </nav>
+    <nav aria-label="サイト情報">
+      <p class="font-bold text-white">サイト情報</p>
+      <ul class="mt-2 space-y-1">
+        <li><a class="hover:underline" href="/simulator/">控除上限額シミュレーター</a></li>
+        <li><a class="hover:underline" href="/about/">コスパの算出方法・免責事項</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-matsu-700">
+    <div class="container-page space-y-1 py-4 text-[11px] leading-relaxed text-matsu-200">
+      <p>
+        本サイトはアフィリエイトプログラムを利用しており、商品リンク経由の申込みにより運営者が報酬を得ることがあります。
+        掲載内容は取得時点のものです。寄付額・内容量・在庫は必ずリンク先でご確認ください。
+      </p>
+      <p>
+        <a class="underline" href="https://webservice.rakuten.co.jp/" rel="noopener" target="_blank">Supported by Rakuten Developers</a>
+        ／
+        <a class="underline" href="https://developer.yahoo.co.jp/sitemap/" rel="noopener" target="_blank">Web Services by Yahoo! JAPAN</a>
+      </p>
+      <p>© {new Date().getFullYear()} {SITE.name}</p>
+    </div>
+  </div>
+</footer>

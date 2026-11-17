@@ -1,0 +1,100 @@
+---
+import { type Item, SOURCE_LABEL, categoryOf, formatAmount, formatYen, unitPrice } from '../lib/furusato';
+
+interface Props {
+  item: Item;
+  /** 順位。渡すと左上に表示する */
+  rank?: number;
+}
+
+const { item, rank } = Astro.props;
+const category = categoryOf(item.category);
+const unit = unitPrice(item);
+const stars = Math.round(item.review_average);
+---
+
+<article class:list={['relative flex flex-col overflow-hidden rounded-lg border border-matsu-100 bg-white', !item.in_stock && 'opacity-70']}>
+  {
+    rank && (
+      <span
+        class:list={[
+          'absolute left-0 top-0 z-10 flex h-9 min-w-9 items-center justify-center rounded-br-lg px-2 text-sm font-bold text-white',
+          rank <= 3 ? 'bg-kaki-500' : 'bg-matsu-700',
+        ]}
+      >
+        <span class="sr-only">第</span>{rank}<span class="text-[10px]">位</span>
+      </span>
+    )
+  }
+
+  <div class="flex aspect-[5/3] items-center justify-center bg-matsu-50">
+    {
+      item.image ? (
+        <img src={item.image} alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" />
+      ) : (
+        <span class="text-6xl" aria-hidden="true">{category.emoji}</span>
+      )
+    }
+  </div>
+
+  <div class="flex flex-1 flex-col gap-3 p-4">
+    <div class="flex flex-wrap items-center gap-1.5">
+      <span class="badge bg-matsu-50 text-matsu-700">{category.label}</span>
+      {item.municipality && <span class="text-xs text-sumi/70">{item.municipality}</span>}
+      {!item.in_stock && <span class="badge bg-sumi/10 text-sumi">在庫なし</span>}
+      {item.is_sample && <span class="badge bg-kaki-50 text-kaki-700">サンプル</span>}
+    </div>
+
+    <h3 class="line-clamp-3 text-sm font-bold leading-relaxed">{item.name}</h3>
+
+    <dl class="rounded-md bg-kaki-50 px-3 py-2.5">
+      <div class="flex items-baseline justify-between gap-2">
+        <dt class="text-xs font-bold text-kaki-700">1,000円あたり</dt>
+        <dd class="text-xl font-bold text-kaki-700">{formatAmount(item.per_1000, item.amount.unit)}</dd>
+      </div>
+      <div class="mt-0.5 flex items-baseline justify-between gap-2 text-xs text-sumi/80">
+        <dt>1万円あたり</dt>
+        <dd class="font-bold">{formatAmount(item.per_10000, item.amount.unit)}</dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-2 text-xs text-sumi/80">
+        <dt>{unit.label}</dt>
+        <dd class="font-bold">{formatYen(unit.yen)}</dd>
+      </div>
+    </dl>
+
+    <dl class="grid grid-cols-2 gap-x-3 gap-y-1 text-xs">
+      <div>
+        <dt class="text-sumi/60">寄付額</dt>
+        <dd class="text-base font-bold">{formatYen(item.price)}</dd>
+      </div>
+      <div>
+        <dt class="text-sumi/60">内容量</dt>
+        <dd class="text-base font-bold">{formatAmount(item.amount.value, item.amount.unit)}</dd>
+      </div>
+      <div class="col-span-2">
+        <dt class="sr-only">レビュー</dt>
+        <dd class="flex items-center gap-1.5">
+          <span class="text-kaki-500" aria-hidden="true">{'★'.repeat(stars)}<span class="text-sumi/20">{'★'.repeat(5 - stars)}</span></span>
+          <span class="font-bold">{item.review_average.toFixed(2)}</span>
+          <span class="text-sumi/60">（{item.review_count.toLocaleString('ja-JP')}件）</span>
+        </dd>
+      </div>
+      <div class="col-span-2 text-sumi/70">
+        <dt class="sr-only">コスパ指数</dt>
+        <dd>同カテゴリ中央値の <span class="font-bold text-matsu-700">{item.cospa_score.toFixed(2)}倍</span> の内容量</dd>
+      </div>
+    </dl>
+
+    <a
+      href={item.url}
+      target="_blank"
+      rel="sponsored noopener"
+      data-affiliate-link
+      data-item-id={item.id}
+      class="mt-auto flex h-11 items-center justify-center rounded-md bg-kaki-500 text-sm font-bold text-white hover:bg-kaki-600"
+    >
+      {SOURCE_LABEL[item.source]}で{item.is_sample ? '探す' : '詳細を見る'}
+      <span class="ml-1 text-[10px] font-normal opacity-80">PR</span>
+    </a>
+  </div>
+</article>

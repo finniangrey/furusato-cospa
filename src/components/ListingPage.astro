@@ -1,0 +1,103 @@
+---
+/**
+ * カテゴリ別・金額帯別の一覧ページ。並び順ごとに静的ページを生成する。
+ *   {basePath}          … コスパ順（既定）
+ *   {basePath}rating/   … レビュー高評価順
+ *   {basePath}reviews/  … レビュー件数順
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ItemCard from './ItemCard.astro';
+import { type Item, type SortKey, SORTS, sortItems, updatedLabel } from '../lib/furusato';
+
+interface Props {
+  heading: string;
+  lead: string;
+  basePath: string;
+  sort: SortKey;
+  items: Item[];
+  /** 同じ軸の他ページへのリンク（カテゴリ一覧なら他カテゴリ） */
+  siblings: { label: string; href: string; current: boolean }[];
+  siblingsLabel: string;
+}
+
+const { heading, lead, basePath, sort, items, siblings, siblingsLabel } = Astro.props;
+const current = SORTS.find((s) => s.key === sort)!;
+const sorted = sortItems(items, sort);
+const title = sort === 'cospa' ? heading : `${heading}（${current.label}）`;
+const description = `${heading}。${items.length}件の返礼品を${current.label}で掲載。1,000円あたり・1万円あたりの内容量で比較できます。`;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="container-page py-8 sm:py-10">
+    <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
+      <a href="/" class="hover:underline">トップ</a>
+      <span aria-hidden="true"> › </span>
+      <span>{heading}</span>
+    </nav>
+
+    <h1 class="section-title mt-3 sm:text-3xl">{heading}</h1>
+    <p class="mt-3 max-w-3xl text-sm text-sumi/80">{lead}</p>
+
+    <nav aria-label={siblingsLabel} class="mt-5 flex flex-wrap gap-2 text-sm">
+      {
+        siblings.map((s) => (
+          <a
+            href={s.href}
+            aria-current={s.current ? 'page' : undefined}
+            class:list={[
+              'rounded-full border px-3 py-1 font-bold',
+              s.current ? 'border-matsu-700 bg-matsu-700 text-white' : 'border-matsu-200 bg-white text-matsu-700 hover:border-matsu-500',
+            ]}
+          >
+            {s.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-3 border-b border-matsu-200">
+      <nav aria-label="並び順" class="flex gap-1 text-sm font-bold">
+        {
+          SORTS.map((s) => (
+            <a
+              href={s.slug ? `${basePath}${s.slug}/` : basePath}
+              aria-current={s.key === sort ? 'page' : undefined}
+              class:list={[
+                '-mb-px rounded-t-md border px-3 py-2 sm:px-4',
+                s.key === sort
+                  ? 'border-matsu-200 border-b-kinari bg-kinari text-matsu-900'
+                  : 'border-transparent text-matsu-600 hover:bg-matsu-50',
+              ]}
+            >
+              {s.label}
+            </a>
+          ))
+        }
+      </nav>
+      <p class="pb-2 text-xs text-sumi/60">{items.length}件 ／ {updatedLabel} 更新</p>
+    </div>
+
+    {
+      sorted.length > 0 ? (
+        <ol class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {sorted.map((item, i) => (
+            <li class="flex">
+              <div class="flex w-full [&>article]:w-full">
+                <ItemCard item={item} rank={i + 1} />
+              </div>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="mt-10 rounded-lg border border-matsu-100 bg-white p-8 text-center text-sm text-sumi/70">
+          現在、この条件に該当する返礼品はありません。
+        </p>
+      )
+    }
+
+    <p class="mt-8 text-xs text-sumi/60">
+      内容量は商品名から自動抽出しています。在庫ありの商品を先に表示しています。算出方法は
+      <a href="/about/" class="underline">こちら</a>。
+    </p>
+  </div>
+</BaseLayout>
