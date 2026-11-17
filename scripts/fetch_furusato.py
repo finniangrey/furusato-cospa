@@ -46,6 +46,7 @@ MIN_PRICE = 2000  # 寄付額がこれ未満の商品は対象外（自己負担
 # 重さ（g 換算）で 1,000 円あたりこの値を超える商品は、型番や賞味期限を内容量と誤認した異常値とみなして除外する。
 # 参考: 米 20kg・28,000 円で約 714g、訳ありみかん 10kg・12,000 円で約 833g。
 MAX_GRAMS_PER_1000_YEN = 3000
+YAHOO_IMAGE_SIZE = 600  # image_size に指定できる最大値（px）。カードは正方形で表示する
 ERROR_BODY_LIMIT = 1000  # APIエラー時に表示するレスポンスボディの最大文字数
 MAX_CONSECUTIVE_API_ERRORS = 3  # HTTP エラーがこの回数続いたら、そのソースの取得を打ち切る
 
@@ -455,6 +456,13 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
     return items
 
 
+def pick_yahoo_image(raw: dict[str, Any]) -> str:
+    """Yahoo の商品画像 URL。高解像度の exImage を優先し、無ければ medium → small の順にフォールバックする。"""
+    ex = raw.get("exImage") or {}
+    image = raw.get("image") or {}
+    return ex.get("url") or image.get("medium") or image.get("small") or ""
+
+
 def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
     """Yahoo!ショッピング 商品検索API v3。"""
     endpoint = "https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch"
@@ -473,6 +481,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                         "appid": client_id,
                         "query": f"ふるさと納税 {keyword}",
                         "results": min(hits, 50),
+                        "image_size": YAHOO_IMAGE_SIZE,  # 指定すると exImage に高解像度画像が入る
                         "sort": "-review_count",
                         "price_from": MIN_PRICE,
                         "affiliate_type": "vc" if affiliate_id else None,
@@ -509,7 +518,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                     name=name,
                     price=int(raw.get("price") or 0),
                     url=raw.get("url", ""),
-                    image=(raw.get("image") or {}).get("medium", ""),
+                    image=pick_yahoo_image(raw),
                     shop=seller.get("name", ""),
                     review_average=review.get("rate") or 0,
                     review_count=review.get("count") or 0,
@@ -605,7 +614,20 @@ def self_test() -> int:
         failed += not ok
         print(f"{'OK ' if ok else 'NG '} ふるさと納税フィルタ: {texts} -> {'返礼品' if is_furusato(*texts) else '除外'}")
 
-    total = len(cases) + len(guard_cases) + len(furusato_cases)
+    # Yahoo の画像 URL: exImage > image.medium > image.small
+    image_cases: list[tuple[dict[str, Any], str]] = [
+        ({"exImage": {"url": "https://i/600.jpg"}, "image": {"medium": "https://i/146.jpg"}}, "https://i/600.jpg"),
+        ({"exImage": {}, "image": {"medium": "https://i/146.jpg", "small": "https://i/76.jpg"}}, "https://i/146.jpg"),
+        ({"image": {"small": "https://i/76.jpg"}}, "https://i/76.jpg"),
+        ({"exImage": None, "image": None}, ""),
+        ({}, ""),
+    ]
+    for raw, expected in image_cases:
+        ok = pick_yahoo_image(raw) == expected
+        failed += not ok
+        print(f"{'OK ' if ok else 'NG '} Yahoo画像URL: {raw} -> {pick_yahoo_image(raw)!r}")
+
+    total = len(cases) + len(guard_cases) + len(furusato_cases) + len(image_cases)
     print(f"{total - failed}/{total} passed")
     return 1 if failed else 0
 

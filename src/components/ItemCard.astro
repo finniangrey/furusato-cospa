@@ -27,12 +27,21 @@ const stars = Math.round(item.review_average);
     )
   }
 
-  <div class="flex aspect-[5/3] items-center justify-center bg-matsu-50">
+  <!-- 画像は 600×600 の正方形を想定。縦横比の違う画像は切り抜かず、白地の中に収める -->
+  <div class="flex aspect-square items-center justify-center border-b border-matsu-100 bg-white">
     {
       item.image ? (
-        <img src={item.image} alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" />
+        <img
+          src={item.image}
+          alt=""
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-contain"
+        />
       ) : (
-        <span class="text-6xl" aria-hidden="true">{category.emoji}</span>
+        <span class="flex h-full w-full items-center justify-center bg-matsu-50 text-7xl" aria-hidden="true">{category.emoji}</span>
       )
     }
   </div>
