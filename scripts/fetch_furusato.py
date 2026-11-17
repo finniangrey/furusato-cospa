@@ -332,6 +332,13 @@ class ApiError(Exception):
         return self.status in (401, 403)
 
 
+class FetchIncomplete(Exception):
+    """取得が途中で打ち切られた、または一部のリクエストが失敗した。
+
+    この状態のデータで furusato.json を上書きすると、カテゴリごと商品が消えるため、書き込まずに異常終了させる。
+    """
+
+
 def http_get_json(url: str, params: dict[str, Any]) -> dict[str, Any]:
     query = urllib.parse.urlencode({k: v for k, v in params.items() if v not in (None, "")})
     request = urllib.request.Request(f"{url}?{query}", headers={"User-Agent": "furusato-cospa/0.1"})
@@ -375,6 +382,7 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
     skipped = 0
     not_furusato = 0  # 「ふるさと納税」表記が無く、一般商品とみなして除外した件数
     api_errors = 0  # 連続した HTTP エラーの回数
+    failed: list[str] = []  # 取得に失敗したキーワード（1 件でもあれば不完全なデータとして扱う）
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
             try:
@@ -394,15 +402,17 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
                 )
             except ApiError as exc:
                 report_api_error("楽天", keyword, exc)
+                failed.append(keyword)
                 api_errors += 1
                 if exc.is_auth_error or api_errors >= MAX_CONSECUTIVE_API_ERRORS:
                     if not exc.is_auth_error:
                         log.error("楽天: APIエラーが %d 回続いたため、以降の取得を中止します", api_errors)
-                    return items
+                    raise FetchIncomplete(f"楽天: 取得を途中で打ち切りました（HTTP {exc.status}・「{keyword}」）") from exc
                 time.sleep(REQUEST_INTERVAL)
                 continue
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-                log.warning("楽天: 「%s」の取得に失敗: %s", keyword, exc)
+                log.error("楽天: 「%s」の取得に失敗: %s", keyword, exc)
+                failed.append(keyword)
                 time.sleep(REQUEST_INTERVAL)
                 continue
             api_errors = 0
@@ -440,6 +450,8 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
         not_furusato,
         skipped,
     )
+    if failed:
+        raise FetchIncomplete(f"楽天: {len(failed)} 件のキーワードで取得に失敗しました（{', '.join(failed)}）")
     return items
 
 
@@ -451,6 +463,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
     skipped = 0
     not_furusato = 0  # 「ふるさと納税」表記が無く、一般商品とみなして除外した件数
     api_errors = 0  # 連続した HTTP エラーの回数
+    failed: list[str] = []  # 取得に失敗したキーワード（1 件でもあれば不完全なデータとして扱う）
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
             try:
@@ -468,15 +481,17 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                 )
             except ApiError as exc:
                 report_api_error("Yahoo", keyword, exc)
+                failed.append(keyword)
                 api_errors += 1
                 if exc.is_auth_error or api_errors >= MAX_CONSECUTIVE_API_ERRORS:
                     if not exc.is_auth_error:
                         log.error("Yahoo: APIエラーが %d 回続いたため、以降の取得を中止します", api_errors)
-                    return items
+                    raise FetchIncomplete(f"Yahoo: 取得を途中で打ち切りました（HTTP {exc.status}・「{keyword}」）") from exc
                 time.sleep(REQUEST_INTERVAL)
                 continue
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-                log.warning("Yahoo: 「%s」の取得に失敗: %s", keyword, exc)
+                log.error("Yahoo: 「%s」の取得に失敗: %s", keyword, exc)
+                failed.append(keyword)
                 time.sleep(REQUEST_INTERVAL)
                 continue
             api_errors = 0
@@ -511,6 +526,8 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
         not_furusato,
         skipped,
     )
+    if failed:
+        raise FetchIncomplete(f"Yahoo: {len(failed)} 件のキーワードで取得に失敗しました（{', '.join(failed)}）")
     return items
 
 
@@ -625,12 +642,17 @@ def main() -> int:
         items = generate_samples()
     else:
         mode = "live"
-        if rakuten_id:
-            sources.append("rakuten")
-            items += fetch_rakuten(rakuten_id, hits)
-        if yahoo_id:
-            sources.append("yahoo")
-            items += fetch_yahoo(yahoo_id, hits)
+        try:
+            if rakuten_id:
+                sources.append("rakuten")
+                items += fetch_rakuten(rakuten_id, hits)
+            if yahoo_id:
+                sources.append("yahoo")
+                items += fetch_yahoo(yahoo_id, hits)
+        except FetchIncomplete as exc:
+            log.error("%s", exc)
+            log.error("取得が不完全なため %s は更新しません（既存データを保持して異常終了します）", OUTPUT.relative_to(ROOT))
+            return 1
         if not items:
             log.error("APIから 1 件も取得できませんでした。既存データは変更しません")
             return 1
