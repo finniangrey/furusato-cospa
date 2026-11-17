@@ -8,13 +8,15 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  /** canonical に指定するパス。並び替えページなど、内容が重複するページで正規 URL を指すために使う */
+  canonicalPath?: string;
 }
 
 // サンプルデータ（架空の商品）を表示している間は、検索エンジンに登録させない
-const { title, description = SITE.description, noindex = isSampleMode } = Astro.props;
+const { title, description = SITE.description, noindex = isSampleMode, canonicalPath = Astro.url.pathname } = Astro.props;
 
 const pageTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const canonical = new URL(canonicalPath, Astro.site).href;
 // GA4 測定 ID。ビルド時の環境変数 PUBLIC_GA_ID が空でなければ gtag.js を出力する
 const gaId = (import.meta.env.PUBLIC_GA_ID ?? '').trim();
 ---

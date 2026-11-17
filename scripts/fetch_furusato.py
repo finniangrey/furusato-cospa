@@ -43,6 +43,11 @@ JST = timezone(timedelta(hours=9))
 REQUEST_INTERVAL = 1.1  # 秒。楽天は 1 リクエスト/秒が上限
 TIMEOUT = 20
 MIN_PRICE = 2000  # 寄付額がこれ未満の商品は対象外（自己負担額 2,000 円以下では意味がない）
+# 重さ（g 換算）で 1,000 円あたりこの値を超える商品は、型番や賞味期限を内容量と誤認した異常値とみなして除外する。
+# 参考: 米 20kg・28,000 円で約 714g、訳ありみかん 10kg・12,000 円で約 833g。
+MAX_GRAMS_PER_1000_YEN = 3000
+ERROR_BODY_LIMIT = 1000  # APIエラー時に表示するレスポンスボディの最大文字数
+MAX_CONSECUTIVE_API_ERRORS = 3  # HTTP エラーがこの回数続いたら、そのソースの取得を打ち切る
 
 log = logging.getLogger("fetch_furusato")
 
@@ -168,6 +173,17 @@ def build_item(
     if not amount:
         return None
     per_yen = amount["value"] / price
+    if amount["kind"] == "weight" and per_yen * 1000 > MAX_GRAMS_PER_1000_YEN:
+        log.warning(
+            "異常値のため除外: 1,000円あたり %.0fg（上限 %dg）｜内容量 %.0fg・寄付額 %d円｜%s｜%s",
+            per_yen * 1000,
+            MAX_GRAMS_PER_1000_YEN,
+            amount["value"],
+            price,
+            item_id,
+            name.strip()[:60],
+        )
+        return None
     return {
         "id": item_id,
         "source": source,
@@ -288,11 +304,49 @@ def generate_samples() -> list[dict[str, Any]]:
 # ---------------------------------------------------------------------------
 
 
+class ApiError(Exception):
+    """API が HTTP エラー（400/401/403/429 など）を返した。body はレスポンスボディ（エラーメッセージ）。"""
+
+    def __init__(self, status: int, reason: str, body: str) -> None:
+        super().__init__(f"HTTP {status} {reason}")
+        self.status = status
+        self.reason = reason
+        self.body = body
+
+    @property
+    def is_auth_error(self) -> bool:
+        """キーの誤り・権限不足。同じキーで再試行しても直らない。"""
+        return self.status in (401, 403)
+
+
 def http_get_json(url: str, params: dict[str, Any]) -> dict[str, Any]:
     query = urllib.parse.urlencode({k: v for k, v in params.items() if v not in (None, "")})
     request = urllib.request.Request(f"{url}?{query}", headers={"User-Agent": "furusato-cospa/0.1"})
-    with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        try:
+            body = exc.read().decode("utf-8", errors="replace").strip()
+        except OSError:
+            body = ""
+        raise ApiError(exc.code, exc.reason or "", body) from exc
+
+
+def report_api_error(source: str, keyword: str, exc: ApiError) -> None:
+    """HTTP エラーの内容を、ステータスコードとレスポンスボディ付きで出力する（URL にはキーが入るので出さない）。"""
+    body = exc.body or "（レスポンスボディなし）"
+    try:  # JSON なら 1 行に整形して読みやすくする
+        body = json.dumps(json.loads(body), ensure_ascii=False)
+    except ValueError:
+        pass
+    if len(body) > ERROR_BODY_LIMIT:
+        body = body[:ERROR_BODY_LIMIT] + "…（以下省略）"
+    reason = "" if str(exc.reason) == str(exc.status) else f" {exc.reason}"
+    log.error("%s: 「%s」で APIエラー HTTP %d%s", source, keyword, exc.status, reason)
+    log.error("%s: レスポンス: %s", source, body)
+    if exc.is_auth_error:
+        log.error("%s: 認証・権限のエラーです。APIキーの値と、アプリの利用設定を確認してください。以降の取得を中止します", source)
 
 
 def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
@@ -306,6 +360,7 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
     affiliate_id = os.environ.get("RAKUTEN_AFFILIATE_ID", "").strip()
     items: list[dict[str, Any]] = []
     skipped = 0
+    api_errors = 0  # 連続した HTTP エラーの回数
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
             try:
@@ -323,10 +378,20 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
                         "formatVersion": 2,
                     },
                 )
+            except ApiError as exc:
+                report_api_error("楽天", keyword, exc)
+                api_errors += 1
+                if exc.is_auth_error or api_errors >= MAX_CONSECUTIVE_API_ERRORS:
+                    if not exc.is_auth_error:
+                        log.error("楽天: APIエラーが %d 回続いたため、以降の取得を中止します", api_errors)
+                    return items
+                time.sleep(REQUEST_INTERVAL)
+                continue
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
                 log.warning("楽天: 「%s」の取得に失敗: %s", keyword, exc)
                 time.sleep(REQUEST_INTERVAL)
                 continue
+            api_errors = 0
             for raw in data.get("Items", []):
                 raw = raw.get("Item", raw)  # formatVersion=1 の入れ子にも対応
                 name = raw.get("itemName", "")
@@ -354,7 +419,7 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
                 else:
                     skipped += 1
             time.sleep(REQUEST_INTERVAL)
-    log.info("楽天: %d 件取得（内容量を抽出できず除外 %d 件）", len(items), skipped)
+    log.info("楽天: %d 件取得（内容量を抽出できない・異常値などで除外 %d 件）", len(items), skipped)
     return items
 
 
@@ -364,6 +429,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
     affiliate_id = os.environ.get("YAHOO_AFFILIATE_ID", "").strip()
     items: list[dict[str, Any]] = []
     skipped = 0
+    api_errors = 0  # 連続した HTTP エラーの回数
     for category, meta in CATEGORIES.items():
         for keyword in meta["keywords"]:
             try:
@@ -379,10 +445,20 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                         "affiliate_id": affiliate_id,
                     },
                 )
+            except ApiError as exc:
+                report_api_error("Yahoo", keyword, exc)
+                api_errors += 1
+                if exc.is_auth_error or api_errors >= MAX_CONSECUTIVE_API_ERRORS:
+                    if not exc.is_auth_error:
+                        log.error("Yahoo: APIエラーが %d 回続いたため、以降の取得を中止します", api_errors)
+                    return items
+                time.sleep(REQUEST_INTERVAL)
+                continue
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
                 log.warning("Yahoo: 「%s」の取得に失敗: %s", keyword, exc)
                 time.sleep(REQUEST_INTERVAL)
                 continue
+            api_errors = 0
             for raw in data.get("hits", []):
                 name = raw.get("name", "")
                 if "ふるさと納税" not in name:
@@ -406,7 +482,7 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                 else:
                     skipped += 1
             time.sleep(REQUEST_INTERVAL)
-    log.info("Yahoo: %d 件取得（内容量を抽出できず除外 %d 件）", len(items), skipped)
+    log.info("Yahoo: %d 件取得（内容量を抽出できない・異常値などで除外 %d 件）", len(items), skipped)
     return items
 
 
@@ -455,7 +531,23 @@ def self_test() -> int:
         ok = actual == expected
         failed += not ok
         print(f"{'OK ' if ok else 'NG '} {name} -> {actual}" + ("" if ok else f"  (期待値 {expected})"))
-    print(f"{len(cases) - failed}/{len(cases)} passed")
+    # 外れ値ガード: (商品名, 寄付額, 掲載されるか)
+    guard_cases: list[tuple[str, int, bool]] = [
+        ("お米 30kg（10kg×3袋）", 10000, True),  # 1,000円あたり 3,000g ちょうどは通す
+        ("お米 20kg 精米", 28000, True),
+        ("豚肉 型番 a-50kg 切り落とし", 10000, False),  # 型番を内容量と誤認 → 5,000g/1,000円
+        ("ハンバーグ 賞味期限 365000g", 12000, False),
+        ("トイレットペーパー 96ロール", 3000, True),  # 個数系は対象外
+        ("天然水 2L×24本", 10000, True),  # 容量系は対象外
+    ]
+    for name, price, expected in guard_cases:
+        got = build_item(item_id="test", source="sample", category="meat", name=name, price=price, url="https://example.com/")
+        ok = (got is not None) == expected
+        failed += not ok
+        print(f"{'OK ' if ok else 'NG '} 外れ値ガード: {name}（{price}円） -> {'掲載' if got else '除外'}")
+
+    total = len(cases) + len(guard_cases)
+    print(f"{total - failed}/{total} passed")
     return 1 if failed else 0
 
 
@@ -471,7 +563,8 @@ def main() -> int:
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8")
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    # ログは標準出力に出す（GitHub Actions のログやリダイレクトで、エラー内容を 1 本の流れで追えるように）
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s", stream=sys.stdout)
     if args.self_test:
         return self_test()
 

@@ -11,6 +11,12 @@ export const SITE = {
     'ふるさと納税の返礼品を、寄付額1,000円あたり・1万円あたりの内容量で比較。肉・魚介・米・フルーツ・日用品のコスパランキングを毎日更新しています。',
 } as const;
 
+/** 運営者情報（フッターと /about/ に表示） */
+export const OPERATOR = {
+  name: '有限会社エクストラ',
+  address: '東京都世田谷区玉川３丁目２０番２号 マノア玉川第三ビル５０１',
+} as const;
+
 export type CategorySlug = 'meat' | 'seafood' | 'rice' | 'fruit' | 'daily';
 export type AmountKind = 'weight' | 'volume' | 'count';
 export type Source = 'rakuten' | 'yahoo' | 'sample';

@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE, updatedLabel } from '../lib/furusato';
+import { OPERATOR, SITE, updatedLabel } from '../lib/furusato';
 ---
 
-<BaseLayout title="コスパの算出方法・免責事項" description={`${SITE.name}のデータの取得元、内容量の抽出方法、コスパ指数の計算式、免責事項について。`}>
+<BaseLayout title="コスパの算出方法・免責事項" description={`${SITE.name}のデータの取得元、内容量の抽出方法、コスパ指数の計算式、免責事項、運営者情報について。`}>
   <div class="container-page py-8 sm:py-10">
     <h1 class="section-title sm:text-3xl">コスパの算出方法・免責事項</h1>
     <div class="prose-doc mt-6 max-w-3xl">
@@ -40,6 +40,16 @@ import { SITE, updatedLabel } from '../lib/furusato';
         <li>本サイトはアフィリエイトプログラムを利用しており、商品リンク経由の申込みで運営者が報酬を得ることがあります。順位は上記の計算式のみで決めており、報酬の有無は影響しません。</li>
         <li>控除上限額シミュレーターの結果は概算です。税額の判断は市区町村または税理士にご確認ください。</li>
       </ul>
+
+      <h2 id="operator">運営者情報</h2>
+      <dl class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 rounded-md border border-matsu-100 bg-white px-4 py-3 text-sm">
+        <dt class="font-bold text-matsu-700">サイト名</dt>
+        <dd>{SITE.name}</dd>
+        <dt class="font-bold text-matsu-700">運営者</dt>
+        <dd>{OPERATOR.name}</dd>
+        <dt class="font-bold text-matsu-700">所在地</dt>
+        <dd>{OPERATOR.address}</dd>
+      </dl>
     </div>
   </div>
 </BaseLayout>

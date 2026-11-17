@@ -27,7 +27,8 @@ const title = sort === 'cospa' ? heading : `${heading}（${current.label}）`;
 const description = `${heading}。${items.length}件の返礼品を${current.label}で掲載。1,000円あたり・1万円あたりの内容量で比較できます。`;
 ---
 
-<BaseLayout title={title} description={description}>
+<!-- 並び替えページは掲載商品が同じなので、canonical は既定（コスパ順）の URL に寄せる -->
+<BaseLayout title={title} description={description} canonicalPath={basePath}>
   <div class="container-page py-8 sm:py-10">
     <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
       <a href="/" class="hover:underline">トップ</a>

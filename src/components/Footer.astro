@@ -1,5 +1,5 @@
 ---
-import { CATEGORIES, PRICE_BANDS, SITE, bandPath, categoryPath, updatedLabel } from '../lib/furusato';
+import { CATEGORIES, OPERATOR, PRICE_BANDS, SITE, bandPath, categoryPath, updatedLabel } from '../lib/furusato';
 ---
 
 <footer class="mt-16 border-t border-matsu-100 bg-matsu-900 text-matsu-100">
@@ -24,7 +24,18 @@ import { CATEGORIES, PRICE_BANDS, SITE, bandPath, categoryPath, updatedLabel } f
       <ul class="mt-2 space-y-1">
         <li><a class="hover:underline" href="/simulator/">控除上限額シミュレーター</a></li>
         <li><a class="hover:underline" href="/about/">コスパの算出方法・免責事項</a></li>
+        <li><a class="hover:underline" href="/about/#operator">運営者情報</a></li>
       </ul>
+      <dl class="mt-4 space-y-1 text-xs leading-relaxed">
+        <div class="flex gap-2">
+          <dt class="shrink-0 font-bold text-white">運営者</dt>
+          <dd>{OPERATOR.name}</dd>
+        </div>
+        <div class="flex gap-2">
+          <dt class="shrink-0 font-bold text-white">所在地</dt>
+          <dd>{OPERATOR.address}</dd>
+        </div>
+      </dl>
     </nav>
   </div>
   <div class="border-t border-matsu-700">
@@ -38,7 +49,7 @@ import { CATEGORIES, PRICE_BANDS, SITE, bandPath, categoryPath, updatedLabel } f
         ／
         <a class="underline" href="https://developer.yahoo.co.jp/sitemap/" rel="noopener" target="_blank">Web Services by Yahoo! JAPAN</a>
       </p>
-      <p>© {new Date().getFullYear()} {SITE.name}</p>
+      <p>© {new Date().getFullYear()} {OPERATOR.name}</p>
     </div>
   </div>
 </footer>
