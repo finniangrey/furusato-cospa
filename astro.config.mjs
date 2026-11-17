@@ -1,5 +1,6 @@
 ﻿// @ts-check
 import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -13,8 +14,11 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory' },
-  // 並び替えページ（/rating/・/reviews/）は canonical が既定の並び順を指すので、サイトマップに載せない
-  integrations: [sitemap({ filter: (page) => !/\/(rating|reviews)\/$/.test(page) })],
+  integrations: [
+    mdx(),
+    // 並び替えページ（/rating/・/reviews/）は canonical が既定の並び順を指すので、サイトマップに載せない
+    sitemap({ filter: (page) => !/\/(rating|reviews)\/$/.test(page) }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

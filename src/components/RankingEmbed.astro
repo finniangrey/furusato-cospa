@@ -1,0 +1,114 @@
+---
+/**
+ * 記事本文（MDX）に埋め込む、最新データ連動のランキング。
+ *   <RankingEmbed category="rice" limit={3} />
+ *   <RankingEmbed category="daily" unit="ロール" limit={3} title="トイレットペーパーの単価ランキング" />
+ *   <RankingEmbed maxPrice={10000} limit={3} />
+ * 中身は furusato.json から毎回選び直すので、日次の自動更新に合わせて価格・単価・リンクも最新になる。
+ */
+import ItemCard from './ItemCard.astro';
+import {
+  type CategorySlug,
+  type SortKey,
+  SORTS,
+  categoryOf,
+  categoryPath,
+  formatAmount,
+  formatYen,
+  items,
+  sortItems,
+  updatedLabel,
+} from '../lib/furusato';
+
+interface Props {
+  /** 絞り込むカテゴリ。省略すると全カテゴリ */
+  category?: CategorySlug;
+  /** 表示件数（既定 3） */
+  limit?: number;
+  /** 寄付額の上限（以下）・下限（以上）。円 */
+  maxPrice?: number;
+  minPrice?: number;
+  /** 内容量の単位（g・ml・ロール など）。単位の違う商品が混ざる日用品などで指定する */
+  unit?: string;
+  /** 並び順。既定はコスパ順 */
+  sort?: SortKey;
+  /** 見出し。省略すると条件から自動で付ける */
+  title?: string;
+}
+
+const { category, limit = 3, maxPrice, minPrice, unit, sort = 'cospa', title } = Astro.props;
+
+// 在庫なしは出さない。条件に合う商品を絞ってから並べ替える
+const matched = items.filter(
+  (i) =>
+    i.in_stock &&
+    (!category || i.category === category) &&
+    (!unit || i.amount.unit === unit) &&
+    (maxPrice === undefined || i.price <= maxPrice) &&
+    (minPrice === undefined || i.price >= minPrice),
+);
+const picked = sortItems(matched, sort).slice(0, limit);
+
+// 条件に合う商品の「1万円あたり内容量」の相場。単位が 1 種類のときだけ出す（単位が違うと比べられない）
+const units = [...new Set(matched.map((i) => i.amount.unit))];
+let stats: { unit: string; median: number; best: number } | null = null;
+if (units.length === 1 && matched.length >= 3) {
+  const values = matched.map((i) => i.per_10000).sort((a, b) => a - b);
+  const mid = Math.floor(values.length / 2);
+  stats = {
+    unit: units[0],
+    median: values.length % 2 ? values[mid] : (values[mid - 1] + values[mid]) / 2,
+    best: values[values.length - 1],
+  };
+}
+
+const priceLabel =
+  maxPrice !== undefined && minPrice !== undefined
+    ? `寄付額${formatYen(minPrice)}〜${formatYen(maxPrice)}`
+    : maxPrice !== undefined
+      ? `寄付額${formatYen(maxPrice)}以下`
+      : minPrice !== undefined
+        ? `寄付額${formatYen(minPrice)}以上`
+        : '';
+const heading =
+  title ??
+  [category ? categoryOf(category).label : '全カテゴリ', priceLabel, `${SORTS.find((s) => s.key === sort)!.label}ランキング`]
+    .filter(Boolean)
+    .join('・');
+---
+
+{
+  picked.length > 0 && (
+    <aside
+      class="not-prose rounded-xl border border-matsu-200 bg-matsu-50/60 p-4 sm:p-5"
+      aria-label={heading}
+      data-ranking-embed
+    >
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="badge bg-kaki-500 text-white">最新データ</span>
+        <p class="text-xs text-sumi/60">{updatedLabel} 更新・在庫ありの返礼品から自動で選んでいます</p>
+      </div>
+      <p class="mt-2 font-display text-lg font-bold leading-snug text-matsu-900">{heading}</p>
+      {
+        stats && (
+          <p class="mt-1 text-sm text-sumi/80">
+            条件に合う{matched.length}件の1万円あたり内容量は、中央値が
+            <strong class="text-matsu-900">{formatAmount(stats.median, stats.unit)}</strong>、最大が
+            <strong class="text-kaki-700">{formatAmount(stats.best, stats.unit)}</strong>です。
+          </p>
+        )
+      }
+      <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 [&>article]:w-full">
+        {picked.map((item, i) => <ItemCard item={item} rank={i + 1} />)}
+      </div>
+      <p class="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-sumi/60">
+        <span>【PR】商品リンクはアフィリエイト広告です。寄付額・在庫はリンク先でご確認ください。</span>
+        {category && (
+          <a href={categoryPath(category)} class="font-bold text-matsu-600 underline underline-offset-2 hover:text-matsu-900">
+            {categoryOf(category).label}のランキングをもっと見る →
+          </a>
+        )}
+      </p>
+    </aside>
+  )
+}

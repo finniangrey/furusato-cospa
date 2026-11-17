@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ColumnCard from '../../components/ColumnCard.astro';
+import { getColumns } from '../../lib/columns';
+import { SITE, breadcrumbJsonLd } from '../../lib/furusato';
+
+const columns = await getColumns();
+const jsonLd = [
+  breadcrumbJsonLd(
+    [
+      { name: 'トップ', path: '/' },
+      { name: '特集・コラム', path: '/columns/' },
+    ],
+    Astro.site,
+  ),
+];
+---
+
+<BaseLayout
+  title="特集・コラム"
+  description={`ふるさと納税の期限・手続きや、お米・日用品などの選び方を、最新のコスパランキングと一緒に解説する${SITE.name}の特集・コラム一覧です。`}
+  jsonLd={jsonLd}
+>
+  <div class="container-page py-8 sm:py-10">
+    <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
+      <a href="/" class="hover:underline">トップ</a>
+      <span aria-hidden="true"> › </span>
+      <span>特集・コラム</span>
+    </nav>
+    <h1 class="section-title mt-3 sm:text-3xl">特集・コラム</h1>
+    <p class="mt-3 max-w-3xl text-sm text-sumi/80">
+      制度や手続きの疑問から、お米・日用品などの選び方まで。記事の中のランキングは、毎日更新している返礼品データから自動で作られます。
+    </p>
+    <p class="mt-2 text-xs text-sumi/60">【PR】記事内の商品リンクはアフィリエイト広告です。</p>
+
+    <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {columns.map((column) => <li class="relative flex [&>article]:w-full"><ColumnCard column={column} /></li>)}
+    </ul>
+  </div>
+</BaseLayout>

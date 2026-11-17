@@ -1,0 +1,187 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RankingEmbed from '../../components/RankingEmbed.astro';
+import ColumnCard from '../../components/ColumnCard.astro';
+import { OPERATOR, breadcrumbJsonLd, categoryOf, categoryPath, itemsInCategory, updatedLabel } from '../../lib/furusato';
+import { type Column, COLUMN_CATEGORY_LABEL, columnPath, getColumns, isoDate, jpDate } from '../../lib/columns';
+
+export const getStaticPaths = (async () => {
+  const columns = await getColumns(); // 新しい順
+  return columns.map((column, i) => ({
+    params: { slug: column.id },
+    // 一覧の並び（新しい順）で、前＝より新しい記事、次＝より古い記事
+    props: { column, newer: columns[i - 1], older: columns[i + 1], others: columns.filter((c) => c.id !== column.id) },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  column: Column;
+  newer?: Column;
+  older?: Column;
+  others: Column[];
+}
+
+const { column, newer, older, others } = Astro.props;
+const { Content, headings } = await render(column);
+const { title, description, publishedAt, updatedAt, category, tags } = column.data;
+
+const path = columnPath(column.id);
+const pageUrl = new URL(path, Astro.site).href;
+const toc = headings.filter((h) => h.depth === 2);
+
+// 関連ランキング: related があればそれ、無ければ記事のカテゴリ（制度・手続きは除く）
+const relatedSlugs = column.data.related ?? (category === 'rule' ? [] : [category]);
+const related = relatedSlugs.map((slug) => categoryOf(slug));
+
+// 同じカテゴリ・タグの記事を優先して「あわせて読みたい」に出す
+const scored = others
+  .map((c) => ({
+    c,
+    score: Number(c.data.category === category) * 2 + c.data.tags.filter((t) => tags.includes(t)).length,
+  }))
+  .sort((a, b) => b.score - a.score || b.c.data.publishedAt.valueOf() - a.c.data.publishedAt.valueOf());
+const readMore = scored.slice(0, 2).map((s) => s.c);
+
+const jsonLd = [
+  breadcrumbJsonLd(
+    [
+      { name: 'トップ', path: '/' },
+      { name: '特集・コラム', path: '/columns/' },
+      { name: title, path },
+    ],
+    Astro.site,
+  ),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    inLanguage: 'ja',
+    datePublished: isoDate(publishedAt),
+    dateModified: isoDate(updatedAt),
+    keywords: tags.join(','),
+    author: { '@type': 'Organization', name: OPERATOR.name },
+    publisher: { '@type': 'Organization', name: OPERATOR.name },
+  },
+];
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-page py-8 sm:py-10">
+    <nav aria-label="パンくずリスト" class="text-xs text-sumi/60">
+      <a href="/" class="hover:underline">トップ</a>
+      <span aria-hidden="true"> › </span>
+      <a href="/columns/" class="hover:underline">特集・コラム</a>
+      <span aria-hidden="true"> › </span>
+      <span>{COLUMN_CATEGORY_LABEL[category]}</span>
+    </nav>
+
+    <article class="mx-auto mt-4 max-w-3xl">
+      <header>
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="badge bg-matsu-50 text-matsu-700">{COLUMN_CATEGORY_LABEL[category]}</span>
+          <span class="text-sumi/60">
+            公開 <time datetime={isoDate(publishedAt)}>{jpDate(publishedAt)}</time>
+            {updatedAt.valueOf() !== publishedAt.valueOf() && <> ／ 更新 <time datetime={isoDate(updatedAt)}>{jpDate(updatedAt)}</time></>}
+          </span>
+        </div>
+        <h1 class="mt-3 font-display text-2xl font-bold leading-snug tracking-wide text-matsu-900 sm:text-3xl">{title}</h1>
+        <p class="mt-3 text-sm leading-relaxed text-sumi/80">{description}</p>
+        <p class="mt-4 rounded-md border border-kaki-100 bg-kaki-50 px-3 py-2 text-xs leading-relaxed text-kaki-700">
+          【PR】この記事にはアフィリエイト広告が含まれます。記事内の商品リンクから申込みがあると、運営者（{OPERATOR.name}）が報酬を得ることがあります。
+          掲載順位は価格・内容量などのデータだけで決めており、報酬の有無は影響しません。
+        </p>
+      </header>
+
+      {
+        toc.length > 1 && (
+          <nav aria-label="目次" class="mt-6 rounded-lg border border-matsu-100 bg-white p-4 text-sm">
+            <p class="font-bold text-matsu-900">この記事の内容</p>
+            <ol class="mt-2 list-decimal space-y-1 pl-5 text-matsu-700">
+              {toc.map((h) => <li><a href={`#${h.slug}`} class="hover:underline">{h.text}</a></li>)}
+            </ol>
+          </nav>
+        )
+      }
+
+      <div class="prose-doc mt-6">
+        <Content components={{ RankingEmbed }} />
+      </div>
+
+      <p class="mt-8 text-xs text-sumi/60">
+        ランキングのデータは {updatedLabel} 時点のものです。寄付額・内容量・在庫は変わるため、申込み前に必ずリンク先でご確認ください。
+        算出方法は<a href="/about/" class="underline">こちら</a>。
+      </p>
+    </article>
+
+    <aside class="mx-auto mt-10 max-w-3xl space-y-8">
+      <section aria-labelledby="next-steps">
+        <h2 id="next-steps" class="font-display text-xl font-bold text-matsu-900">次に見る</h2>
+        <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+          <li>
+            <a href="/simulator/" class="tile h-full">
+              <span class="font-bold text-matsu-900">控除上限額シミュレーター</span>
+              <span class="text-xs text-sumi/60">年収と家族構成から、寄付できる金額の目安を計算</span>
+            </a>
+          </li>
+          {
+            related.map((c) => (
+              <li>
+                <a href={categoryPath(c.slug)} class="tile h-full">
+                  <span class="font-bold text-matsu-900">{c.emoji} {c.label}のコスパランキング</span>
+                  <span class="text-xs text-sumi/60">{itemsInCategory(c.slug).length}件を1,000円あたりの内容量で比較</span>
+                </a>
+              </li>
+            ))
+          }
+          {
+            related.length === 0 && (
+              <li>
+                <a href="/price/under-10000/" class="tile h-full">
+                  <span class="font-bold text-matsu-900">寄付額1万円以下のランキング</span>
+                  <span class="text-xs text-sumi/60">年末の残り枠に使いやすい金額帯から探す</span>
+                </a>
+              </li>
+            )
+          }
+        </ul>
+      </section>
+
+      {
+        readMore.length > 0 && (
+          <section aria-labelledby="read-more">
+            <h2 id="read-more" class="font-display text-xl font-bold text-matsu-900">あわせて読みたい</h2>
+            <ul class="mt-3 grid gap-4 sm:grid-cols-2">
+              {readMore.map((c) => <li class="relative flex [&>article]:w-full"><ColumnCard column={c} /></li>)}
+            </ul>
+          </section>
+        )
+      }
+
+      <nav aria-label="前後の記事" class="grid gap-3 border-t border-matsu-100 pt-6 text-sm sm:grid-cols-2">
+        {
+          newer ? (
+            <a href={columnPath(newer.id)} class="rounded-lg border border-matsu-100 bg-white p-4 hover:border-matsu-500">
+              <span class="text-xs text-sumi/60">← 新しい記事</span>
+              <span class="mt-1 block font-bold text-matsu-900">{newer.data.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        {
+          older && (
+            <a href={columnPath(older.id)} class="rounded-lg border border-matsu-100 bg-white p-4 text-right hover:border-matsu-500">
+              <span class="text-xs text-sumi/60">前の記事 →</span>
+              <span class="mt-1 block font-bold text-matsu-900">{older.data.title}</span>
+            </a>
+          )
+        }
+      </nav>
+    </aside>
+  </div>
+</BaseLayout>
