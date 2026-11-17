@@ -46,7 +46,6 @@ MIN_PRICE = 2000  # 寄付額がこれ未満の商品は対象外（自己負担
 # 重さ（g 換算）で 1,000 円あたりこの値を超える商品は、型番や賞味期限を内容量と誤認した異常値とみなして除外する。
 # 参考: 米 20kg・28,000 円で約 714g、訳ありみかん 10kg・12,000 円で約 833g。
 MAX_GRAMS_PER_1000_YEN = 3000
-YAHOO_IMAGE_SIZE = 600  # image_size に指定できる最大値（px）。カードは正方形で表示する
 ERROR_BODY_LIMIT = 1000  # APIエラー時に表示するレスポンスボディの最大文字数
 MAX_CONSECUTIVE_API_ERRORS = 3  # HTTP エラーがこの回数続いたら、そのソースの取得を打ち切る
 
@@ -456,11 +455,22 @@ def fetch_rakuten(app_id: str, hits: int) -> list[dict[str, Any]]:
     return items
 
 
+_YAHOO_IMAGE_PATH_RE = re.compile(r"^(https?://[^/]+\.yimg\.jp/i/)[a-z]/")
+
+
 def pick_yahoo_image(raw: dict[str, Any]) -> str:
-    """Yahoo の商品画像 URL。高解像度の exImage を優先し、無ければ medium → small の順にフォールバックする。"""
+    """Yahoo の商品画像 URL（600×600px）。
+
+    商品検索API v3 には画像サイズの指定パラメータが無く、image.medium は 146×146px
+    （.../i/g/<店舗>_<商品>）、small は 76×76px（.../i/c/...）が返る。
+    画像サーバー上の同じ商品は、パスの /i/g/ を /i/l/ に変えると 600×600px で取得できる
+    （実際の取得で HTTP 200・600×600px を確認済み）ので、そちらへ変換して返す。
+    exImage があればそれを優先し、/i/<英字>/ 形式でなければ変換せずそのまま返す。
+    """
     ex = raw.get("exImage") or {}
     image = raw.get("image") or {}
-    return ex.get("url") or image.get("medium") or image.get("small") or ""
+    url = ex.get("url") or image.get("medium") or image.get("small") or ""
+    return _YAHOO_IMAGE_PATH_RE.sub(r"\1l/", url)
 
 
 def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
@@ -481,7 +491,6 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
                         "appid": client_id,
                         "query": f"ふるさと納税 {keyword}",
                         "results": min(hits, 50),
-                        "image_size": YAHOO_IMAGE_SIZE,  # 指定すると exImage に高解像度画像が入る
                         "sort": "-review_count",
                         "price_from": MIN_PRICE,
                         "affiliate_type": "vc" if affiliate_id else None,
@@ -543,6 +552,22 @@ def fetch_yahoo(client_id: str, hits: int) -> list[dict[str, Any]]:
 # ---------------------------------------------------------------------------
 # エントリポイント
 # ---------------------------------------------------------------------------
+
+
+def is_fresh(dataset: Any, today: str, mode: str, sources: list[str]) -> bool:
+    """dataset が「今日（JST）に、同じ取得元・同じモードで」作られたものか。
+
+    取得元やモードが違う場合（サンプル → 実データ、楽天キーを追加した、など）は
+    今日の日付でも作り直す必要があるので False を返す。
+    """
+    if not isinstance(dataset, dict):
+        return False
+    return (
+        str(dataset.get("generated_at", ""))[:10] == today
+        and dataset.get("mode") == mode
+        and dataset.get("sources") == sources
+        and bool(dataset.get("items"))
+    )
 
 
 def load_dotenv() -> None:
@@ -617,8 +642,14 @@ def self_test() -> int:
     # Yahoo の画像 URL: exImage > image.medium > image.small
     image_cases: list[tuple[dict[str, Any], str]] = [
         ({"exImage": {"url": "https://i/600.jpg"}, "image": {"medium": "https://i/146.jpg"}}, "https://i/600.jpg"),
-        ({"exImage": {}, "image": {"medium": "https://i/146.jpg", "small": "https://i/76.jpg"}}, "https://i/146.jpg"),
-        ({"image": {"small": "https://i/76.jpg"}}, "https://i/76.jpg"),
+        (  # exImage が無ければ medium（/i/g/ = 146px）を /i/l/（600px）へ変換
+            {"exImage": None, "image": {"medium": "https://item-shopping.c.yimg.jp/i/g/shop_item01", "small": "https://item-shopping.c.yimg.jp/i/c/shop_item01"}},
+            "https://item-shopping.c.yimg.jp/i/l/shop_item01",
+        ),
+        ({"image": {"small": "https://item-shopping.c.yimg.jp/i/c/shop_item01"}}, "https://item-shopping.c.yimg.jp/i/l/shop_item01"),
+        ({"exImage": {"url": "https://item-shopping.c.yimg.jp/i/n/shop_item01"}}, "https://item-shopping.c.yimg.jp/i/l/shop_item01"),
+        ({"image": {"medium": "https://item-shopping.c.yimg.jp/i/l/shop_item01"}}, "https://item-shopping.c.yimg.jp/i/l/shop_item01"),
+        ({"image": {"medium": "https://example.com/a/g/x.jpg"}}, "https://example.com/a/g/x.jpg"),  # Yahoo の画像サーバー以外は触らない
         ({"exImage": None, "image": None}, ""),
         ({}, ""),
     ]
@@ -627,7 +658,22 @@ def self_test() -> int:
         failed += not ok
         print(f"{'OK ' if ok else 'NG '} Yahoo画像URL: {raw} -> {pick_yahoo_image(raw)!r}")
 
-    total = len(cases) + len(guard_cases) + len(furusato_cases) + len(image_cases)
+    # 本日更新済みガード: (dataset, モード, 取得元, 今日と同じ日付なら True になるか)
+    base = {"generated_at": "2026-11-18T04:20:00+09:00", "mode": "live", "sources": ["yahoo"], "items": [{"id": "x"}]}
+    fresh_cases: list[tuple[str, Any, str, list[str], bool]] = [
+        ("今日・同じ条件 → スキップ", base, "live", ["yahoo"], True),
+        ("昨日のデータ → 取得する", {**base, "generated_at": "2026-11-17T23:59:00+09:00"}, "live", ["yahoo"], False),
+        ("サンプルデータ → 実データを取得する", {**base, "mode": "sample", "sources": ["sample"]}, "live", ["yahoo"], False),
+        ("楽天キーを追加 → 取得する", base, "live", ["rakuten", "yahoo"], False),
+        ("商品が空 → 取得する", {**base, "items": []}, "live", ["yahoo"], False),
+        ("壊れたデータ → 取得する", None, "live", ["yahoo"], False),
+    ]
+    for label, dataset, mode, sources, expected in fresh_cases:
+        ok = is_fresh(dataset, "2026-11-18", mode, sources) == expected
+        failed += not ok
+        print(f"{'OK ' if ok else 'NG '} 本日更新済みガード: {label}")
+
+    total = len(cases) + len(guard_cases) + len(furusato_cases) + len(image_cases) + len(fresh_cases)
     print(f"{total - failed}/{total} passed")
     return 1 if failed else 0
 
@@ -637,6 +683,7 @@ def main() -> int:
     parser.add_argument("--sample", action="store_true", help="APIキーがあってもサンプルデータを生成する")
     parser.add_argument("--dry-run", action="store_true", help="ファイルに書き込まない")
     parser.add_argument("--self-test", action="store_true", help="内容量パーサーのテストを実行する")
+    parser.add_argument("--force", action="store_true", help="本日更新済みでも、APIを叩いて取得し直す")
     parser.add_argument("--hits", type=int, default=30, help="1 キーワードあたりの取得件数（最大 30）")
     args = parser.parse_args()
 
@@ -664,6 +711,18 @@ def main() -> int:
         items = generate_samples()
     else:
         mode = "live"
+        planned = (["rakuten"] if rakuten_id else []) + (["yahoo"] if yahoo_id else [])
+        # GitHub Actions は 1 日 2 回起動する（片方がスキップされても更新できるように）。
+        # 1 回目が成功していれば、2 回目は API を一切叩かずに正常終了して、呼び出し上限を節約する。
+        if not args.force and not args.dry_run and OUTPUT.exists():
+            try:
+                existing = json.loads(OUTPUT.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                existing = None
+            today = datetime.now(JST).strftime("%Y-%m-%d")
+            if is_fresh(existing, today, mode, planned):
+                log.info("%s は本日（%s・JST）すでに更新済みです。APIは呼ばずに終了します（強制更新は --force）", OUTPUT.relative_to(ROOT), today)
+                return 0
         try:
             if rakuten_id:
                 sources.append("rakuten")

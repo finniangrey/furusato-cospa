@@ -1,7 +1,13 @@
 name: Update furusato data
 
-# 毎日 JST 03:23 に返礼品データ（価格・在庫・レビュー）を取得し、main に commit する。
+# 返礼品データ（価格・在庫・レビュー）を取得し、main に commit する。
 # Cloudflare Pages は main への push を検知して自動で再ビルド・デプロイする。
+#
+# 実行は 1 日 2 回。GitHub の定期実行は混雑時に遅延・スキップされることがあるため、
+# 切りのよい時刻（毎時 0 分・30 分）を避けた 2 つの時刻を設定している。
+#   JST 04:17（UTC 19:17）と JST 06:43（UTC 21:43）
+# 1 回目が成功していれば、2 回目はスクリプトが「本日更新済み」と判断して API を叩かずに終了する。
+# 手動実行（Run workflow）で force を有効にすると、更新済みでも取得し直す。
 #
 # Secrets（Settings > Secrets and variables > Actions）:
 #   RAKUTEN_APP_ID / RAKUTEN_AFFILIATE_ID / RAKUTEN_ACCESS_KEY（任意）
@@ -9,8 +15,15 @@ name: Update furusato data
 # どれも未設定の間は、サンプルデータを生成するフォールバックモードで動く。
 on:
   schedule:
-    - cron: "23 18 * * *" # UTC 18:23 = JST 03:23
+    - cron: "17 19 * * *" # UTC 19:17 = JST 04:17
+    - cron: "43 21 * * *" # UTC 21:43 = JST 06:43（1 回目がスキップされたときの予備）
   workflow_dispatch:
+    inputs:
+      force:
+        description: "本日更新済みでも API を叩いて取得し直す"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -42,7 +55,7 @@ jobs:
           RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
           YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
           YAHOO_AFFILIATE_ID: ${{ secrets.YAHOO_AFFILIATE_ID }}
-        run: python scripts/fetch_furusato.py
+        run: python scripts/fetch_furusato.py ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
       - name: Setup Node (build check)
         uses: actions/setup-node@v4
