@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T08:48:56+09:00",
+  "generated_at": "2026-11-23T09:19:52+09:00",
   "mode": "live",
   "sources": [
     "yahoo"
@@ -76,29 +76,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3156549",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 千代田町 柔軟剤 パルファムボーテフルーティーバルサミック 480ml×16個 ch024-003rr",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3156549.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3156549",
-      "review_average": 4.57,
-      "review_count": 7,
-      "in_stock": true,
-      "amount": {
-        "kind": "volume",
-        "unit": "ml",
-        "value": 7680.0
-      },
-      "per_1000": 590.77,
-      "per_10000": 5907.7,
-      "cospa_score": 7.54,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1463855",
       "source": "yahoo",
       "category": "fruit",
@@ -168,6 +145,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_3156549",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 千代田町 柔軟剤 パルファムボーテフルーティーバルサミック 480ml×16個 ch024-003rr",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3156549.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3156549",
+      "review_average": 4.57,
+      "review_count": 7,
+      "in_stock": true,
+      "amount": {
+        "kind": "volume",
+        "unit": "ml",
+        "value": 7680.0
+      },
+      "per_1000": 590.77,
+      "per_10000": 5907.7,
+      "cospa_score": 5.54,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_849812",
       "source": "yahoo",
       "category": "seafood",
@@ -201,7 +201,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1389616.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1389616",
       "review_average": 4.55,
-      "review_count": 1803,
+      "review_count": 1807,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -398,6 +398,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furusatochoice_6002789",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 雑貨・日用品 神奈川県 川崎市  花王 食器用洗剤キュキュット　つめかえ用　1250ml×6本 12月より順次発送",
+      "municipality": "神奈川県川崎市",
+      "shop": "ふるさとチョイス",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F6002789.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_6002789",
+      "review_average": 5.0,
+      "review_count": 6,
+      "in_stock": true,
+      "amount": {
+        "kind": "volume",
+        "unit": "ml",
+        "value": 7500.0
+      },
+      "per_1000": 468.75,
+      "per_10000": 4687.5,
+      "cospa_score": 4.39,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_363078",
       "source": "yahoo",
       "category": "fruit",
@@ -453,8 +476,8 @@
       "price": 8000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1696077.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1696077",
-      "review_average": 4.53,
-      "review_count": 145,
+      "review_average": 4.54,
+      "review_count": 156,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -651,29 +674,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3094852",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 能代市 トイレットペーパー「バスター」12R シングル8パック 96個[No.5335-0016]",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3094852.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3094852",
-      "review_average": 4.27,
-      "review_count": 67,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 96
-      },
-      "per_1000": 8.0,
-      "per_10000": 80.0,
-      "cospa_score": 3.56,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_162886",
       "source": "yahoo",
       "category": "fruit",
@@ -753,7 +753,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1402869.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1402869",
       "review_average": 4.05,
-      "review_count": 130,
+      "review_count": 131,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -868,7 +868,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3135822.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3135822",
       "review_average": 4.71,
-      "review_count": 626,
+      "review_count": 627,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -937,7 +937,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3140337.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3140337",
       "review_average": 4.79,
-      "review_count": 85,
+      "review_count": 86,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1019,6 +1019,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_3094852",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 能代市 トイレットペーパー「バスター」12R シングル8パック 96個[No.5335-0016]",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3094852.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3094852",
+      "review_average": 4.27,
+      "review_count": 67,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 96
+      },
+      "per_1000": 8.0,
+      "per_10000": 80.0,
+      "cospa_score": 2.87,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1360194",
       "source": "yahoo",
       "category": "fruit",
@@ -1051,8 +1074,8 @@
       "price": 12000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1650682.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1650682",
-      "review_average": 4.3,
-      "review_count": 71,
+      "review_average": 4.31,
+      "review_count": 72,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1098,7 +1121,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1731782.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1731782",
       "review_average": 4.94,
-      "review_count": 143,
+      "review_count": 144,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1281,8 +1304,8 @@
       "price": 8500,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3162275.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3162275",
-      "review_average": 4.77,
-      "review_count": 66,
+      "review_average": 4.78,
+      "review_count": 67,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1315,29 +1338,6 @@
       "per_1000": 342.86,
       "per_10000": 3428.6,
       "cospa_score": 2.26,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_187557",
-      "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 【生食可】カット済み生ずわいがに1.3〜1.5kg×1P ずわいがに ズワイガニ カニ 蟹 かに 刺身 海鮮 北海道 根室 A-38016 北海道根室市",
-      "municipality": "北海道根室市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F187557.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_187557",
-      "review_average": 4.39,
-      "review_count": 57,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 1500.0
-      },
-      "per_1000": 93.75,
-      "per_10000": 937.5,
-      "cospa_score": 2.23,
       "is_sample": false
     },
     {
@@ -1410,6 +1410,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1621031",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 千葉県産『房乃誉』精米 10kg(5kg×2袋)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 10500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1621031.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1621031",
+      "review_average": 3.78,
+      "review_count": 158,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 952.38,
+      "per_10000": 9523.8,
+      "cospa_score": 2.14,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1557599",
       "source": "yahoo",
       "category": "fruit",
@@ -1420,7 +1443,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1557599.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1557599",
       "review_average": 4.1,
-      "review_count": 172,
+      "review_count": 173,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1453,29 +1476,6 @@
       "per_1000": 312.5,
       "per_10000": 3125.0,
       "cospa_score": 2.13,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1621031",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 千葉県産『房乃誉』精米 10kg(5kg×2袋)",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 10500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1621031.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1621031",
-      "review_average": 3.78,
-      "review_count": 158,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 952.38,
-      "per_10000": 9523.8,
-      "cospa_score": 2.1,
       "is_sample": false
     },
     {
@@ -1640,6 +1640,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1625485",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 千葉県産『房乃誉』無洗米 10kg(5kg×2袋)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 11500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1625485.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1625485",
+      "review_average": 3.92,
+      "review_count": 51,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 869.57,
+      "per_10000": 8695.7,
+      "cospa_score": 1.96,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1290646",
       "source": "yahoo",
       "category": "meat",
@@ -1660,29 +1683,6 @@
       "per_1000": 295.45,
       "per_10000": 2954.5,
       "cospa_score": 1.94,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1625485",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 千葉県産『房乃誉』無洗米 10kg(5kg×2袋)",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 11500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1625485.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1625485",
-      "review_average": 3.92,
-      "review_count": 51,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 869.57,
-      "per_10000": 8695.7,
-      "cospa_score": 1.91,
       "is_sample": false
     },
     {
@@ -1718,8 +1718,8 @@
       "price": 14000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1287201.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1287201",
-      "review_average": 4.56,
-      "review_count": 225,
+      "review_average": 4.57,
+      "review_count": 226,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1729,6 +1729,29 @@
       "per_1000": 285.71,
       "per_10000": 2857.1,
       "cospa_score": 1.88,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_452880",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 新米 令和8年産 コシヒカリ 10kg 12月発送 茨城県八千代町",
+      "municipality": "茨城県八千代町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F452880.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_452880",
+      "review_average": 4.34,
+      "review_count": 68,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 833.33,
+      "per_10000": 8333.3,
+      "cospa_score": 1.87,
       "is_sample": false
     },
     {
@@ -1751,6 +1774,29 @@
       },
       "per_1000": 1.25,
       "per_10000": 12.5,
+      "cospa_score": 1.87,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3235785",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 境町 新米 米 最短2日後発送 2種食べ比べ10kg 令和8年産 茨城県産 人気",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3235785.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3235785",
+      "review_average": 4.58,
+      "review_count": 26,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 833.33,
+      "per_10000": 8333.3,
       "cospa_score": 1.87,
       "is_sample": false
     },
@@ -1801,52 +1847,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_106089",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 豚肉「前田さん家のスウィートポーク」切り落とし5kg〔89-001-5kg〕_(都城市) 豚肉 宮崎県都城市",
-      "municipality": "宮崎県都城市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F106089.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_106089",
-      "review_average": 4.56,
-      "review_count": 104,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 5000.0
-      },
-      "per_1000": 277.78,
-      "per_10000": 2777.8,
-      "cospa_score": 1.83,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_452880",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 新米 令和8年産 コシヒカリ 10kg 12月発送 茨城県八千代町",
-      "municipality": "茨城県八千代町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F452880.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_452880",
-      "review_average": 4.34,
-      "review_count": 68,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 833.33,
-      "per_10000": 8333.3,
-      "cospa_score": 1.83,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_458449",
       "source": "yahoo",
       "category": "seafood",
@@ -1879,8 +1879,8 @@
       "price": 13000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1608690.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1608690",
-      "review_average": 4.04,
-      "review_count": 106,
+      "review_average": 4.05,
+      "review_count": 107,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1912,29 +1912,6 @@
       },
       "per_1000": 76.92,
       "per_10000": 769.2,
-      "cospa_score": 1.83,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3235785",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 境町 新米 米 最短2日後発送 2種食べ比べ10kg 令和8年産 茨城県産 人気",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3235785.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3235785",
-      "review_average": 4.58,
-      "review_count": 26,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 833.33,
-      "per_10000": 8333.3,
       "cospa_score": 1.83,
       "is_sample": false
     },
@@ -1985,6 +1962,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_1206764",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【新米 令和8年産】千葉県産「粒すけ」精米 10kg(5kg×2袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1206764.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1206764",
+      "review_average": 4.58,
+      "review_count": 36,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 769.23,
+      "per_10000": 7692.3,
+      "cospa_score": 1.73,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_185534",
       "source": "yahoo",
       "category": "daily",
@@ -2004,6 +2004,29 @@
       },
       "per_1000": 666.67,
       "per_10000": 6666.7,
+      "cospa_score": 1.71,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_557507",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 甲佐の輝き 無洗米 16kg ブレンド米 訳あり 令和8年産【価格改定ZS】 熊本県甲佐町",
+      "municipality": "熊本県甲佐町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 21000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F557507.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_557507",
+      "review_average": 4.3,
+      "review_count": 104,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 16000.0
+      },
+      "per_1000": 761.9,
+      "per_10000": 7619.0,
       "cospa_score": 1.71,
       "is_sample": false
     },
@@ -2031,6 +2054,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_3114270",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米16kg　令和8年産【ZU】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 21000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3114270.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3114270",
+      "review_average": 3.3,
+      "review_count": 37,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 16000.0
+      },
+      "per_1000": 761.9,
+      "per_10000": 7619.0,
+      "cospa_score": 1.71,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1106865",
       "source": "yahoo",
       "category": "fruit",
@@ -2050,6 +2096,29 @@
       },
       "per_1000": 250.0,
       "per_10000": 2500.0,
+      "cospa_score": 1.71,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3114270",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米16kg　令和8年産【ZU】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 21000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3114270.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3114270",
+      "review_average": 3.89,
+      "review_count": 220,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 16000.0
+      },
+      "per_1000": 761.9,
+      "per_10000": 7619.0,
       "cospa_score": 1.71,
       "is_sample": false
     },
@@ -2074,98 +2143,6 @@
       "per_1000": 71.43,
       "per_10000": 714.3,
       "cospa_score": 1.7,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1206764",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 【新米 令和8年産】千葉県産「粒すけ」精米 10kg(5kg×2袋)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1206764.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1206764",
-      "review_average": 4.58,
-      "review_count": 36,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 769.23,
-      "per_10000": 7692.3,
-      "cospa_score": 1.69,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_557507",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 甲佐の輝き 無洗米 16kg ブレンド米 訳あり 令和8年産【価格改定ZS】 熊本県甲佐町",
-      "municipality": "熊本県甲佐町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 21000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F557507.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_557507",
-      "review_average": 4.3,
-      "review_count": 104,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 16000.0
-      },
-      "per_1000": 761.9,
-      "per_10000": 7619.0,
-      "cospa_score": 1.68,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3114270",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米16kg　令和8年産【ZU】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 21000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3114270.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3114270",
-      "review_average": 3.3,
-      "review_count": 37,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 16000.0
-      },
-      "per_1000": 761.9,
-      "per_10000": 7619.0,
-      "cospa_score": 1.68,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3114270",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米16kg　令和8年産【ZU】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 21000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3114270.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3114270",
-      "review_average": 3.89,
-      "review_count": 220,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 16000.0
-      },
-      "per_1000": 761.9,
-      "per_10000": 7619.0,
-      "cospa_score": 1.68,
       "is_sample": false
     },
     {
@@ -2215,29 +2192,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3282114",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 関市 計8160m! シングル 3倍巻 48個(144個相当)トイレットペーパー 防災 日用品 備蓄",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3282114.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3282114",
-      "review_average": 4.63,
-      "review_count": 87,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 48
-      },
-      "per_1000": 3.69,
-      "per_10000": 36.9,
-      "cospa_score": 1.64,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3097897",
       "source": "yahoo",
       "category": "seafood",
@@ -2281,6 +2235,144 @@
       "per_1000": 247.06,
       "per_10000": 2470.6,
       "cospa_score": 1.63,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3131639",
+      "source": "yahoo",
+      "category": "seafood",
+      "name": "ふるさと納税 紋別市 【訳あり】特大4L〜5L_ボイル本ずわいがに肩脚　4〜5肩(約1.5kg)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 22000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3131639.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3131639",
+      "review_average": 4.35,
+      "review_count": 37,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 1500.0
+      },
+      "per_1000": 68.18,
+      "per_10000": 681.8,
+      "cospa_score": 1.62,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_1202010",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg (5kg ×2袋)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1202010.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1202010",
+      "review_average": 4.57,
+      "review_count": 42,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 714.29,
+      "per_10000": 7142.9,
+      "cospa_score": 1.61,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3185502",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米10kg　令和8年産【ZO】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3185502.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3185502",
+      "review_average": 3.4,
+      "review_count": 90,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 714.29,
+      "per_10000": 7142.9,
+      "cospa_score": 1.61,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1202010",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg (5kg ×2袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1202010.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1202010",
+      "review_average": 4.27,
+      "review_count": 33,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 714.29,
+      "per_10000": 7142.9,
+      "cospa_score": 1.61,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3039998",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米子市 新米!令和8年産 大山しらゆき米 10kg (精白 コシヒカリ 5kg×2)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3039998.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3039998",
+      "review_average": 4.62,
+      "review_count": 154,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 714.29,
+      "per_10000": 7142.9,
+      "cospa_score": 1.61,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3185502",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米10kg　令和8年産【ZO】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3185502.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3185502",
+      "review_average": 4.29,
+      "review_count": 48,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 714.29,
+      "per_10000": 7142.9,
+      "cospa_score": 1.61,
       "is_sample": false
     },
     {
@@ -2376,121 +2468,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1202010",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg (5kg ×2袋)",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1202010.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1202010",
-      "review_average": 4.56,
-      "review_count": 41,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 714.29,
-      "per_10000": 7142.9,
-      "cospa_score": 1.57,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3185502",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米10kg　令和8年産【ZO】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3185502.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3185502",
-      "review_average": 3.4,
-      "review_count": 90,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 714.29,
-      "per_10000": 7142.9,
-      "cospa_score": 1.57,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1202010",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg (5kg ×2袋)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1202010.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1202010",
-      "review_average": 4.27,
-      "review_count": 33,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 714.29,
-      "per_10000": 7142.9,
-      "cospa_score": 1.57,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3039998",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米子市 新米!令和8年産 大山しらゆき米 10kg (精白 コシヒカリ 5kg×2)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3039998.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3039998",
-      "review_average": 4.62,
-      "review_count": 154,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 714.29,
-      "per_10000": 7142.9,
-      "cospa_score": 1.57,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3185502",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 甲佐町 『甲佐の輝き』無洗米10kg　令和8年産【ZO】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3185502.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3185502",
-      "review_average": 4.29,
-      "review_count": 48,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 714.29,
-      "per_10000": 7142.9,
-      "cospa_score": 1.57,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_948745",
       "source": "yahoo",
       "category": "daily",
@@ -2570,7 +2547,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3080218.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3080218",
       "review_average": 4.67,
-      "review_count": 188,
+      "review_count": 189,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -2602,6 +2579,29 @@
       },
       "per_1000": 65.22,
       "per_10000": 652.2,
+      "cospa_score": 1.55,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1120894",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 土浦市 令和8年産 茨城県産 コシヒカリ　精米 合計10kg (5kg×2袋)茨城のお米",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 14500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1120894.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1120894",
+      "review_average": 4.72,
+      "review_count": 25,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 689.66,
+      "per_10000": 6896.6,
       "cospa_score": 1.55,
       "is_sample": false
     },
@@ -2662,7 +2662,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3193115.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3193115",
       "review_average": 4.77,
-      "review_count": 60,
+      "review_count": 61,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -2672,29 +2672,6 @@
       "per_1000": 65.22,
       "per_10000": 652.2,
       "cospa_score": 1.55,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_268730",
-      "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 北海道 根室【生食可】カット済み生ずわいがに1.4〜1.6kg(700〜800g×2P) B-48014 北海道根室市",
-      "municipality": "北海道根室市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 25000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F268730.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_268730",
-      "review_average": 4.18,
-      "review_count": 61,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 1600.0
-      },
-      "per_1000": 64.0,
-      "per_10000": 640.0,
-      "cospa_score": 1.52,
       "is_sample": false
     },
     {
@@ -2744,29 +2721,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1120894",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 土浦市 令和8年産 茨城県産 コシヒカリ　精米 合計10kg (5kg×2袋)茨城のお米",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 14500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1120894.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1120894",
-      "review_average": 4.72,
-      "review_count": 25,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 689.66,
-      "per_10000": 6896.6,
-      "cospa_score": 1.52,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3051029",
       "source": "yahoo",
       "category": "seafood",
@@ -2810,6 +2764,52 @@
       "per_1000": 229.1,
       "per_10000": 2291.0,
       "cospa_score": 1.51,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1260610",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 20kg 無洗米 ( 5kg ×4袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 30000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1260610.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1260610",
+      "review_average": 4.51,
+      "review_count": 117,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 20000.0
+      },
+      "per_1000": 666.67,
+      "per_10000": 6666.7,
+      "cospa_score": 1.5,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1260615",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg 無洗米 (5kg ×2袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1260615.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1260615",
+      "review_average": 4.54,
+      "review_count": 96,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 666.67,
+      "per_10000": 6666.7,
+      "cospa_score": 1.5,
       "is_sample": false
     },
     {
@@ -2905,52 +2905,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1260610",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 【令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 20kg 無洗米 ( 5kg ×4袋)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 30000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1260610.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1260610",
-      "review_average": 4.51,
-      "review_count": 117,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 20000.0
-      },
-      "per_1000": 666.67,
-      "per_10000": 6666.7,
-      "cospa_score": 1.47,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1260615",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 大網白里市 【新米 令和8年産】2年連続特A評価! 千葉県 米 コシヒカリ 10kg 無洗米 (5kg ×2袋)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1260615.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1260615",
-      "review_average": 4.54,
-      "review_count": 96,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 666.67,
-      "per_10000": 6666.7,
-      "cospa_score": 1.47,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3144544",
       "source": "yahoo",
       "category": "meat",
@@ -3017,6 +2971,29 @@
       "per_1000": 9.0,
       "per_10000": 90.0,
       "cospa_score": 1.45,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_132429",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 白米 令和8年産 新米 ひのひかり 10kg 米 熊本県玉東町",
+      "municipality": "熊本県玉東町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 15800,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F132429.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_132429",
+      "review_average": 4.69,
+      "review_count": 139,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 632.91,
+      "per_10000": 6329.1,
+      "cospa_score": 1.42,
       "is_sample": false
     },
     {
@@ -3131,29 +3108,6 @@
       },
       "per_1000": 60.0,
       "per_10000": 600.0,
-      "cospa_score": 1.42,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3041474",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 富士宮市 エリエール 消臭+トイレットティシュー ほのかに香るナチュラルクリアの香りコンパクトダブル 64個",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 20000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3041474.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3041474",
-      "review_average": 4.84,
-      "review_count": 101,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 64
-      },
-      "per_1000": 3.2,
-      "per_10000": 32.0,
       "cospa_score": 1.42,
       "is_sample": false
     },
@@ -3296,29 +3250,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_132429",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 白米 令和8年産 新米 ひのひかり 10kg 米 熊本県玉東町",
-      "municipality": "熊本県玉東町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 15800,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F132429.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_132429",
-      "review_average": 4.69,
-      "review_count": 139,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 632.91,
-      "per_10000": 6329.1,
-      "cospa_score": 1.39,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furusatochoice_4931767",
       "source": "yahoo",
       "category": "fruit",
@@ -3388,29 +3319,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3156547",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 千代田町 柔軟剤 パルファムボーテ 4種 お試しセット (各480ml×2) 計8個 ch024-001r",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 9000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3156547.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3156547",
-      "review_average": 4.86,
-      "review_count": 14,
-      "in_stock": true,
-      "amount": {
-        "kind": "volume",
-        "unit": "ml",
-        "value": 960.0
-      },
-      "per_1000": 106.67,
-      "per_10000": 1066.7,
-      "cospa_score": 1.36,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1097034",
       "source": "yahoo",
       "category": "meat",
@@ -3454,6 +3362,29 @@
       "per_1000": 8.35,
       "per_10000": 83.5,
       "cospa_score": 1.35,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_132434",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 白米 令和8年産 新米 森のくまさん 10kg 米 熊本県玉東町",
+      "municipality": "熊本県玉東町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 16800,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F132434.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_132434",
+      "review_average": 4.7,
+      "review_count": 220,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 595.24,
+      "per_10000": 5952.4,
+      "cospa_score": 1.34,
       "is_sample": false
     },
     {
@@ -3572,6 +3503,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1283246",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 大網白里市 【令和8年産】2年連続特A評価!　千葉県 米 コシヒカリ 5kg 無洗米 ( 5kg ×1袋)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 8500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1283246.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1283246",
+      "review_average": 4.63,
+      "review_count": 27,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 5000.0
+      },
+      "per_1000": 588.24,
+      "per_10000": 5882.4,
+      "cospa_score": 1.32,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1510665",
       "source": "yahoo",
       "category": "meat",
@@ -3582,7 +3536,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1510665.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1510665",
       "review_average": 4.57,
-      "review_count": 1278,
+      "review_count": 1279,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -3628,7 +3582,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3050597.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3050597",
       "review_average": 4.59,
-      "review_count": 422,
+      "review_count": 424,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -3637,6 +3591,29 @@
       },
       "per_1000": 55.56,
       "per_10000": 555.6,
+      "cospa_score": 1.32,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3282114",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 関市 計8160m! シングル 3倍巻 48個(144個相当)トイレットペーパー 防災 日用品 備蓄",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3282114.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3282114",
+      "review_average": 4.64,
+      "review_count": 88,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 48
+      },
+      "per_1000": 3.69,
+      "per_10000": 36.9,
       "cospa_score": 1.32,
       "is_sample": false
     },
@@ -3651,7 +3628,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3288332.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3288332",
       "review_average": 3.96,
-      "review_count": 382,
+      "review_count": 384,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -3848,49 +3825,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_132434",
+      "id": "yahoo-furunavi_591199",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 白米 令和8年産 新米 森のくまさん 10kg 米 熊本県玉東町",
-      "municipality": "熊本県玉東町",
+      "name": "ふるさと納税 新米 令和8年産 はえぬき  無洗米 15kg ja-hamxb15 山形県村山市",
+      "municipality": "山形県村山市",
       "shop": "ふるなび(ふるさと納税)",
-      "price": 16800,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F132434.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_132434",
-      "review_average": 4.7,
-      "review_count": 220,
+      "price": 26000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F591199.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_591199",
+      "review_average": 4.47,
+      "review_count": 40,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 10000.0
+        "value": 15000.0
       },
-      "per_1000": 595.24,
-      "per_10000": 5952.4,
-      "cospa_score": 1.31,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1283246",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 大網白里市 【令和8年産】2年連続特A評価!　千葉県 米 コシヒカリ 5kg 無洗米 ( 5kg ×1袋)",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 8500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1283246.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1283246",
-      "review_average": 4.63,
-      "review_count": 27,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 5000.0
-      },
-      "per_1000": 588.24,
-      "per_10000": 5882.4,
-      "cospa_score": 1.29,
+      "per_1000": 576.92,
+      "per_10000": 5769.2,
+      "cospa_score": 1.3,
       "is_sample": false
     },
     {
@@ -3940,29 +3894,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_591199",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 新米 令和8年産 はえぬき  無洗米 15kg ja-hamxb15 山形県村山市",
-      "municipality": "山形県村山市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 26000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F591199.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_591199",
-      "review_average": 4.47,
-      "review_count": 40,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 15000.0
-      },
-      "per_1000": 576.92,
-      "per_10000": 5769.2,
-      "cospa_score": 1.27,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_929896",
       "source": "yahoo",
       "category": "seafood",
@@ -3982,6 +3913,29 @@
       },
       "per_1000": 52.63,
       "per_10000": 526.3,
+      "cospa_score": 1.25,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3102562",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 沼田町 令和8年産 特Aランク米 ななつぼし 精米 10kg(5kg×2袋)【5月発送】 nr-2839",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3102562.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3102562",
+      "review_average": 4.19,
+      "review_count": 36,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 555.56,
+      "per_10000": 5555.6,
       "cospa_score": 1.25,
       "is_sample": false
     },
@@ -4009,26 +3963,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3041475",
+      "id": "yahoo-y-sf_1281100",
       "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 富士宮市 エリエール 消臭+トイレットティシュー しっかり香るフレッシュクリアの香り コンパクトダブル 64個",
+      "category": "rice",
+      "name": "ふるさと納税 新庄市 令和8年産【先行受付】 山形県産 はえぬき 無洗米5kg×2袋　計10kg",
       "municipality": "",
       "shop": "さとふる",
-      "price": 22900,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3041475.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3041475",
-      "review_average": 4.83,
-      "review_count": 236,
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1281100.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1281100",
+      "review_average": 4.61,
+      "review_count": 252,
       "in_stock": true,
       "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 64
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
       },
-      "per_1000": 2.79,
-      "per_10000": 27.9,
-      "cospa_score": 1.24,
+      "per_1000": 555.56,
+      "per_10000": 5555.6,
+      "cospa_score": 1.25,
       "is_sample": false
     },
     {
@@ -4078,25 +4032,25 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3102562",
+      "id": "yahoo-furunavi_454123",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 沼田町 令和8年産 特Aランク米 ななつぼし 精米 10kg(5kg×2袋)【5月発送】 nr-2839",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3102562.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3102562",
-      "review_average": 4.19,
-      "review_count": 36,
+      "name": "ふるさと納税 無洗米 令和8年産 新米 ひのひかり 森のくまさん 10kg 無洗 熊本県玉東町",
+      "municipality": "熊本県玉東町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 18500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F454123.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_454123",
+      "review_average": 4.68,
+      "review_count": 25,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
         "value": 10000.0
       },
-      "per_1000": 555.56,
-      "per_10000": 5555.6,
+      "per_1000": 540.54,
+      "per_10000": 5405.4,
       "cospa_score": 1.22,
       "is_sample": false
     },
@@ -4120,29 +4074,6 @@
       },
       "per_1000": 3.87,
       "per_10000": 38.7,
-      "cospa_score": 1.22,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1281100",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 新庄市 令和8年産【先行受付】 山形県産 はえぬき 無洗米5kg×2袋　計10kg",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1281100.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1281100",
-      "review_average": 4.61,
-      "review_count": 252,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 555.56,
-      "per_10000": 5555.6,
       "cospa_score": 1.22,
       "is_sample": false
     },
@@ -4262,29 +4193,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_454123",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 無洗米 令和8年産 新米 ひのひかり 森のくまさん 10kg 無洗 熊本県玉東町",
-      "municipality": "熊本県玉東町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 18500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F454123.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_454123",
-      "review_average": 4.68,
-      "review_count": 25,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 540.54,
-      "per_10000": 5405.4,
-      "cospa_score": 1.19,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_770125",
       "source": "yahoo",
       "category": "seafood",
@@ -4354,6 +4262,52 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_3272308",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 男鹿市 「産直ごはん」 秋田県産米パックごはん180g×48個米保存食ご飯|23_aks-014801",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 16400,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3272308.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3272308",
+      "review_average": 4.28,
+      "review_count": 57,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 8640.0
+      },
+      "per_1000": 526.83,
+      "per_10000": 5268.3,
+      "cospa_score": 1.18,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1104733",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 酒田市 【令和8年産】無洗米　特別栽培米つや姫　精米5kg×2袋",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 19000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1104733.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1104733",
+      "review_average": 4.56,
+      "review_count": 34,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 526.32,
+      "per_10000": 5263.2,
+      "cospa_score": 1.18,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1125659",
       "source": "yahoo",
       "category": "meat",
@@ -4400,6 +4354,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furunavi_145402",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 宮崎県産豚肉6種盛り合わせセット(合計4.1kg) 肉 豚 豚肉 おかず 国産_T030-2048 宮崎県都農町",
+      "municipality": "宮崎県都農町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 23000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F145402.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_145402",
+      "review_average": 4.54,
+      "review_count": 76,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 4100.0
+      },
+      "per_1000": 178.26,
+      "per_10000": 1782.6,
+      "cospa_score": 1.17,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1659206",
       "source": "yahoo",
       "category": "fruit",
@@ -4410,7 +4387,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1659206.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1659206",
       "review_average": 4.6,
-      "review_count": 89,
+      "review_count": 90,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -4446,52 +4423,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3272308",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 男鹿市 「産直ごはん」 秋田県産米パックごはん180g×48個米保存食ご飯|23_aks-014801",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 16400,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3272308.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3272308",
-      "review_average": 4.28,
-      "review_count": 57,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 8640.0
-      },
-      "per_1000": 526.83,
-      "per_10000": 5268.3,
-      "cospa_score": 1.16,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1104733",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 酒田市 【令和8年産】無洗米　特別栽培米つや姫　精米5kg×2袋",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 19000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1104733.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1104733",
-      "review_average": 4.56,
-      "review_count": 34,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 526.32,
-      "per_10000": 5263.2,
-      "cospa_score": 1.16,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_3061949",
       "source": "yahoo",
       "category": "daily",
@@ -4515,6 +4446,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_3041474",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 富士宮市 エリエール 消臭+トイレットティシュー ほのかに香るナチュラルクリアの香りコンパクトダブル 64個",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 20000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3041474.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3041474",
+      "review_average": 4.84,
+      "review_count": 101,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 64
+      },
+      "per_1000": 3.2,
+      "per_10000": 32.0,
+      "cospa_score": 1.15,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_3061949",
       "source": "yahoo",
       "category": "daily",
@@ -4534,6 +4488,29 @@
       },
       "per_1000": 7.11,
       "per_10000": 71.1,
+      "cospa_score": 1.15,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3187451",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 滝川市 [R8年産]特A 北海道滝川産 ゆめぴりか無洗米 10kg 単一米 新米 お米マイスター",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 19500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3187451.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3187451",
+      "review_average": 4.72,
+      "review_count": 25,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 512.82,
+      "per_10000": 5128.2,
       "cospa_score": 1.15,
       "is_sample": false
     },
@@ -4630,26 +4607,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3187451",
+      "id": "yahoo-furunavi_312967",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 滝川市 [R8年産]特A 北海道滝川産 ゆめぴりか無洗米 10kg 単一米 新米 お米マイスター",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 19500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3187451.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3187451",
-      "review_average": 4.72,
-      "review_count": 25,
+      "name": "ふるさと納税 令和8年産 新米 北海道 秩父別町産 無洗米ななつぼし(10kg)【R8SB2】 北海道秩父別町",
+      "municipality": "北海道秩父別町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 20000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F312967.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_312967",
+      "review_average": 4.17,
+      "review_count": 24,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
         "value": 10000.0
       },
-      "per_1000": 512.82,
-      "per_10000": 5128.2,
-      "cospa_score": 1.13,
+      "per_1000": 500.0,
+      "per_10000": 5000.0,
+      "cospa_score": 1.12,
       "is_sample": false
     },
     {
@@ -4695,6 +4672,52 @@
       },
       "per_1000": 6.92,
       "per_10000": 69.2,
+      "cospa_score": 1.12,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1006486",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 弥彦村 令和8年産特別栽培米コシヒカリ 伊彌彦米 10kg(5kg×2袋)新潟県産 精米 弥彦村",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 20000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1006486.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1006486",
+      "review_average": 4.72,
+      "review_count": 130,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 500.0,
+      "per_10000": 5000.0,
+      "cospa_score": 1.12,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1080822",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 若狭町 【令和8年産】福井県若狭町コシヒカリ(1等米)10kg",
+      "municipality": "福井県若狭町",
+      "shop": "さとふる",
+      "price": 20000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1080822.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1080822",
+      "review_average": 4.71,
+      "review_count": 24,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 500.0,
+      "per_10000": 5000.0,
       "cospa_score": 1.12,
       "is_sample": false
     },
@@ -4777,8 +4800,8 @@
       "price": 14000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3104676.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3104676",
-      "review_average": 4.39,
-      "review_count": 117,
+      "review_average": 4.4,
+      "review_count": 118,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -4788,75 +4811,6 @@
       "per_1000": 6.86,
       "per_10000": 68.6,
       "cospa_score": 1.11,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_312967",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 令和8年産 新米 北海道 秩父別町産 無洗米ななつぼし(10kg)【R8SB2】 北海道秩父別町",
-      "municipality": "北海道秩父別町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 20000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F312967.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_312967",
-      "review_average": 4.17,
-      "review_count": 24,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 500.0,
-      "per_10000": 5000.0,
-      "cospa_score": 1.1,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1006486",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 弥彦村 令和8年産特別栽培米コシヒカリ 伊彌彦米 10kg(5kg×2袋)新潟県産 精米 弥彦村",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 20000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1006486.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1006486",
-      "review_average": 4.72,
-      "review_count": 130,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 500.0,
-      "per_10000": 5000.0,
-      "cospa_score": 1.1,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1080822",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 若狭町 【令和8年産】福井県若狭町コシヒカリ(1等米)10kg",
-      "municipality": "福井県若狭町",
-      "shop": "さとふる",
-      "price": 20000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1080822.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1080822",
-      "review_average": 4.71,
-      "review_count": 24,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 500.0,
-      "per_10000": 5000.0,
-      "cospa_score": 1.1,
       "is_sample": false
     },
     {
@@ -4929,6 +4883,52 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_3141576",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ななつぼし(10kg)【R8SB2】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 21000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3141576.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3141576",
+      "review_average": 4.12,
+      "review_count": 43,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 476.19,
+      "per_10000": 4761.9,
+      "cospa_score": 1.07,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3057962",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ななつぼし定期便40kg(隔月発送)【R8UB-20】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 84000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057962.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057962",
+      "review_average": 4.49,
+      "review_count": 76,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 40000.0
+      },
+      "per_1000": 476.19,
+      "per_10000": 4761.9,
+      "cospa_score": 1.07,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1302110",
       "source": "yahoo",
       "category": "meat",
@@ -4975,48 +4975,25 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3141576",
+      "id": "yahoo-y-furusato_1144534",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ななつぼし(10kg)【R8SB2】",
+      "name": "ふるさと納税 川西町 令和8年産　山形県産　雪若丸　10kg(5kg×2袋)",
       "municipality": "",
       "shop": "Yahoo!ふるさと納税",
-      "price": 21000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3141576.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3141576",
-      "review_average": 4.12,
-      "review_count": 43,
+      "price": 21500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1144534.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1144534",
+      "review_average": 4.68,
+      "review_count": 37,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
         "value": 10000.0
       },
-      "per_1000": 476.19,
-      "per_10000": 4761.9,
-      "cospa_score": 1.05,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3057962",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ななつぼし定期便40kg(隔月発送)【R8UB-20】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 84000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057962.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057962",
-      "review_average": 4.49,
-      "review_count": 76,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 40000.0
-      },
-      "per_1000": 476.19,
-      "per_10000": 4761.9,
+      "per_1000": 465.12,
+      "per_10000": 4651.2,
       "cospa_score": 1.05,
       "is_sample": false
     },
@@ -5054,7 +5031,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3098052.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3098052",
       "review_average": 4.27,
-      "review_count": 255,
+      "review_count": 256,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -5063,6 +5040,29 @@
       },
       "per_1000": 6.4,
       "per_10000": 64.0,
+      "cospa_score": 1.03,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3272307",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 男鹿市 「産直ごはん」 秋田県産米パックごはん180g×24個米保存食ご飯|23_aks-012401",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 9400,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3272307.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3272307",
+      "review_average": 4.11,
+      "review_count": 9,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 4320.0
+      },
+      "per_1000": 459.57,
+      "per_10000": 4595.7,
       "cospa_score": 1.03,
       "is_sample": false
     },
@@ -5113,25 +5113,48 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1144534",
+      "id": "yahoo-y-furusato_3057935",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 川西町 令和8年産　山形県産　雪若丸　10kg(5kg×2袋)",
+      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか(10kg)【R8SC2】",
       "municipality": "",
       "shop": "Yahoo!ふるさと納税",
-      "price": 21500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1144534.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1144534",
-      "review_average": 4.68,
-      "review_count": 37,
+      "price": 22000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3057935.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3057935",
+      "review_average": 3.84,
+      "review_count": 43,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
         "value": 10000.0
       },
-      "per_1000": 465.12,
-      "per_10000": 4651.2,
+      "per_1000": 454.55,
+      "per_10000": 4545.5,
+      "cospa_score": 1.02,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1320226",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 東川町 【R8年産】ななつぼし無洗米10kg(5kg×2袋) 12月下旬発送【n010-002-12g】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 22000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1320226.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1320226",
+      "review_average": 4.61,
+      "review_count": 85,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 454.55,
+      "per_10000": 4545.5,
       "cospa_score": 1.02,
       "is_sample": false
     },
@@ -5159,26 +5182,49 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3272307",
+      "id": "yahoo-y-sf_3057935",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 男鹿市 「産直ごはん」 秋田県産米パックごはん180g×24個米保存食ご飯|23_aks-012401",
+      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか(10kg)【R8SC2】",
       "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 9400,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3272307.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3272307",
-      "review_average": 4.11,
-      "review_count": 9,
+      "shop": "さとふる",
+      "price": 22000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057935.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057935",
+      "review_average": 4.48,
+      "review_count": 46,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 4320.0
+        "value": 10000.0
       },
-      "per_1000": 459.57,
-      "per_10000": 4595.7,
-      "cospa_score": 1.01,
+      "per_1000": 454.55,
+      "per_10000": 4545.5,
+      "cospa_score": 1.02,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3057957",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか定期便40kg(隔月発送)【R8UC-20】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 88000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057957.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057957",
+      "review_average": 4.57,
+      "review_count": 42,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 40000.0
+      },
+      "per_1000": 454.55,
+      "per_10000": 4545.5,
+      "cospa_score": 1.02,
       "is_sample": false
     },
     {
@@ -5435,29 +5481,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3057935",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか(10kg)【R8SC2】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 22000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3057935.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3057935",
-      "review_average": 3.84,
-      "review_count": 43,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 454.55,
-      "per_10000": 4545.5,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_3091745",
       "source": "yahoo",
       "category": "daily",
@@ -5523,6 +5546,29 @@
       },
       "per_1000": 1.67,
       "per_10000": 16.7,
+      "cospa_score": 1.0,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3156547",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 千代田町 柔軟剤 パルファムボーテ 4種 お試しセット (各480ml×2) 計8個 ch024-001r",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 9000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3156547.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3156547",
+      "review_average": 4.86,
+      "review_count": 14,
+      "in_stock": true,
+      "amount": {
+        "kind": "volume",
+        "unit": "ml",
+        "value": 960.0
+      },
+      "per_1000": 106.67,
+      "per_10000": 1066.7,
       "cospa_score": 1.0,
       "is_sample": false
     },
@@ -5711,29 +5757,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1320226",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 東川町 【R8年産】ななつぼし無洗米10kg(5kg×2袋) 12月下旬発送【n010-002-12g】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 22000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1320226.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1320226",
-      "review_average": 4.61,
-      "review_count": 85,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 454.55,
-      "per_10000": 4545.5,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3013355",
       "source": "yahoo",
       "category": "meat",
@@ -5757,48 +5780,25 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3057935",
+      "id": "yahoo-y-sf_3041475",
       "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか(10kg)【R8SC2】",
+      "category": "daily",
+      "name": "ふるさと納税 富士宮市 エリエール 消臭+トイレットティシュー しっかり香るフレッシュクリアの香り コンパクトダブル 64個",
       "municipality": "",
       "shop": "さとふる",
-      "price": 22000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057935.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057935",
-      "review_average": 4.48,
-      "review_count": 46,
+      "price": 22900,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3041475.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3041475",
+      "review_average": 4.83,
+      "review_count": 236,
       "in_stock": true,
       "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
+        "kind": "count",
+        "unit": "個",
+        "value": 64
       },
-      "per_1000": 454.55,
-      "per_10000": 4545.5,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3057957",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 秩父別町 【新米予約受付中】令和8年産 無洗米ゆめぴりか定期便40kg(隔月発送)【R8UC-20】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 88000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3057957.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3057957",
-      "review_average": 4.57,
-      "review_count": 42,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 40000.0
-      },
-      "per_1000": 454.55,
-      "per_10000": 4545.5,
+      "per_1000": 2.79,
+      "per_10000": 27.9,
       "cospa_score": 1.0,
       "is_sample": false
     },
@@ -5964,6 +5964,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1394170",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 養父市 令和8年産【新米受付開始】2026年9月以降発送【蛇紋岩ブランド　別格米10kg】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 23000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1394170.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1394170",
+      "review_average": 4.74,
+      "review_count": 46,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 434.78,
+      "per_10000": 4347.8,
+      "cospa_score": 0.98,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_271301",
       "source": "yahoo",
       "category": "meat",
@@ -6010,6 +6033,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furusatochoice_5366833",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 あきたこまち 秋田県 仙北市 米 白米 パックご飯 200g×40個《特A産地》秋田県 仙北市産 あきたこまち パックごはん パックご飯 パックライス…",
+      "municipality": "秋田県仙北市",
+      "shop": "ふるさとチョイス",
+      "price": 18500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5366833.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5366833",
+      "review_average": 4.0,
+      "review_count": 4,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 8000.0
+      },
+      "per_1000": 432.43,
+      "per_10000": 4324.3,
+      "cospa_score": 0.97,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1221599",
       "source": "yahoo",
       "category": "meat",
@@ -6033,26 +6079,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1394170",
+      "id": "yahoo-y-sf_3155009",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 養父市 令和8年産【新米受付開始】2026年9月以降発送【蛇紋岩ブランド　別格米10kg】",
+      "name": "ふるさと納税 仙北市 あきたこまち パックご飯 200g×40個【特A産地】秋田県産|02_jpr-010801",
       "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 23000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1394170.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1394170",
-      "review_average": 4.74,
-      "review_count": 46,
+      "shop": "さとふる",
+      "price": 18500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3155009.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3155009",
+      "review_average": 4.63,
+      "review_count": 32,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 10000.0
+        "value": 8000.0
       },
-      "per_1000": 434.78,
-      "per_10000": 4347.8,
-      "cospa_score": 0.96,
+      "per_1000": 432.43,
+      "per_10000": 4324.3,
+      "cospa_score": 0.97,
       "is_sample": false
     },
     {
@@ -6102,29 +6148,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3155009",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 仙北市 あきたこまち パックご飯 200g×40個【特A産地】秋田県産|02_jpr-010801",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 18500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3155009.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3155009",
-      "review_average": 4.63,
-      "review_count": 32,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 8000.0
-      },
-      "per_1000": 432.43,
-      "per_10000": 4324.3,
-      "cospa_score": 0.95,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_114035",
       "source": "yahoo",
       "category": "meat",
@@ -6158,7 +6181,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1043715.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1043715",
       "review_average": 4.67,
-      "review_count": 325,
+      "review_count": 326,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -6213,6 +6236,52 @@
       },
       "per_1000": 142.22,
       "per_10000": 1422.2,
+      "cospa_score": 0.94,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1296662",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 深川市 【令和8年産・先行予約】北海道深川産ふっくりんこ10kg(5kg×2袋)(普通精米) 新米 お米",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 24000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1296662.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1296662",
+      "review_average": 4.24,
+      "review_count": 101,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 416.67,
+      "per_10000": 4166.7,
+      "cospa_score": 0.94,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1320248",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 東川町 【R8年産】ゆめぴりか無洗米10kg(5kg×2袋) 12月下旬発送【y010-002-12g】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 24000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1320248.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1320248",
+      "review_average": 4.9,
+      "review_count": 39,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 416.67,
+      "per_10000": 4166.7,
       "cospa_score": 0.94,
       "is_sample": false
     },
@@ -6282,52 +6351,6 @@
       },
       "per_1000": 140.0,
       "per_10000": 1400.0,
-      "cospa_score": 0.92,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1296662",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 深川市 【令和8年産・先行予約】北海道深川産ふっくりんこ10kg(5kg×2袋)(普通精米) 新米 お米",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 24000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1296662.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1296662",
-      "review_average": 4.24,
-      "review_count": 101,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 416.67,
-      "per_10000": 4166.7,
-      "cospa_score": 0.92,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1320248",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 東川町 【R8年産】ゆめぴりか無洗米10kg(5kg×2袋) 12月下旬発送【y010-002-12g】",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 24000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1320248.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1320248",
-      "review_average": 4.9,
-      "review_count": 39,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 416.67,
-      "per_10000": 4166.7,
       "cospa_score": 0.92,
       "is_sample": false
     },
@@ -6447,26 +6470,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_26879",
+      "id": "yahoo-y-furusato_1297128",
       "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 お刺身トラウトサーモン600g(150g~300g×2~4本) A-09002 北海道根室市",
-      "municipality": "北海道根室市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F26879.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_26879",
-      "review_average": 4.38,
-      "review_count": 64,
+      "category": "rice",
+      "name": "ふるさと納税 鶴岡市 あったかご飯・あつみの米パックライス(180g×24P)　【K-830】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 11000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1297128.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1297128",
+      "review_average": 5.0,
+      "review_count": 5,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 600.0
+        "value": 4320.0
       },
-      "per_1000": 37.5,
-      "per_10000": 375.0,
-      "cospa_score": 0.89,
+      "per_1000": 392.73,
+      "per_10000": 3927.3,
+      "cospa_score": 0.88,
       "is_sample": false
     },
     {
@@ -6493,29 +6516,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1297128",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 鶴岡市 あったかご飯・あつみの米パックライス(180g×24P)　【K-830】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 11000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1297128.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1297128",
-      "review_average": 5.0,
-      "review_count": 5,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 4320.0
-      },
-      "per_1000": 392.73,
-      "per_10000": 3927.3,
-      "cospa_score": 0.86,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1494831",
       "source": "yahoo",
       "category": "meat",
@@ -6535,6 +6535,29 @@
       },
       "per_1000": 4.12,
       "per_10000": 41.2,
+      "cospa_score": 0.86,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1321292",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 最上町 【無洗米】さとふる限定!令和8年産山形県産特別栽培米つや姫5kg",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1321292.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1321292",
+      "review_average": 5.0,
+      "review_count": 25,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 5000.0
+      },
+      "per_1000": 384.62,
+      "per_10000": 3846.2,
       "cospa_score": 0.86,
       "is_sample": false
     },
@@ -6571,8 +6594,8 @@
       "price": 23500,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F583737.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_583737",
-      "review_average": 4.75,
-      "review_count": 187,
+      "review_average": 4.76,
+      "review_count": 188,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -6631,29 +6654,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1321292",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 最上町 【無洗米】さとふる限定!令和8年産山形県産特別栽培米つや姫5kg",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1321292.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1321292",
-      "review_average": 5.0,
-      "review_count": 25,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 5000.0
-      },
-      "per_1000": 384.62,
-      "per_10000": 3846.2,
-      "cospa_score": 0.85,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_3113796",
       "source": "yahoo",
       "category": "seafood",
@@ -6673,6 +6673,52 @@
       },
       "per_1000": 35.48,
       "per_10000": 354.8,
+      "cospa_score": 0.84,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1236729",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 魚沼市 令和8年産【無洗米】「米食味鑑定士　厳選」魚沼産コシヒカリ　3kg",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 8000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1236729.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1236729",
+      "review_average": 4.72,
+      "review_count": 40,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3000.0
+      },
+      "per_1000": 375.0,
+      "per_10000": 3750.0,
+      "cospa_score": 0.84,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1236730",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 魚沼市 令和8年産【無洗米】「米食味鑑定士　厳選」魚沼産コシヒカリ　6kg(3kg×2袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1236730.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1236730",
+      "review_average": 4.86,
+      "review_count": 35,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 6000.0
+      },
+      "per_1000": 375.0,
+      "per_10000": 3750.0,
       "cospa_score": 0.84,
       "is_sample": false
     },
@@ -6769,6 +6815,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furunavi_534396",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 白米 パックご飯 200g×24個《特A産地》秋田県 仙北市産 あきたこまち パックごはん【 パックご飯 パックライス ご飯 ご飯.. 秋田県仙北市",
+      "municipality": "秋田県仙北市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F534396.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_534396",
+      "review_average": 4.67,
+      "review_count": 6,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 4800.0
+      },
+      "per_1000": 369.23,
+      "per_10000": 3692.3,
+      "cospa_score": 0.83,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1623930",
       "source": "yahoo",
       "category": "fruit",
@@ -6811,6 +6880,29 @@
       },
       "per_1000": 2.62,
       "per_10000": 26.2,
+      "cospa_score": 0.83,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3095536",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 仙北市 あきたこまち パックご飯 200g×24個【特A産地】秋田県産|02_jpr-010501",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3095536.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3095536",
+      "review_average": 4.35,
+      "review_count": 20,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 4800.0
+      },
+      "per_1000": 369.23,
+      "per_10000": 3692.3,
       "cospa_score": 0.83,
       "is_sample": false
     },
@@ -6861,52 +6953,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1236729",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 魚沼市 令和8年産【無洗米】「米食味鑑定士　厳選」魚沼産コシヒカリ　3kg",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 8000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1236729.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1236729",
-      "review_average": 4.72,
-      "review_count": 40,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3000.0
-      },
-      "per_1000": 375.0,
-      "per_10000": 3750.0,
-      "cospa_score": 0.82,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_534396",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 白米 パックご飯 200g×24個《特A産地》秋田県 仙北市産 あきたこまち パックごはん【 パックご飯 パックライス ご飯 ご飯.. 秋田県仙北市",
-      "municipality": "秋田県仙北市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F534396.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_534396",
-      "review_average": 4.67,
-      "review_count": 6,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 4800.0
-      },
-      "per_1000": 369.23,
-      "per_10000": 3692.3,
-      "cospa_score": 0.81,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1133050",
       "source": "yahoo",
       "category": "seafood",
@@ -6916,8 +6962,8 @@
       "price": 19000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1133050.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1133050",
-      "review_average": 4.63,
-      "review_count": 186,
+      "review_average": 4.64,
+      "review_count": 187,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -6953,6 +6999,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_1034325",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 魚沼市 【令和8年産】【無洗米】　お米マイスター厳選　魚沼産コシヒカリ　合計9kg(3kg×3袋)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 25000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034325.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034325",
+      "review_average": 4.7,
+      "review_count": 43,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 9000.0
+      },
+      "per_1000": 360.0,
+      "per_10000": 3600.0,
+      "cospa_score": 0.81,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1133050",
       "source": "yahoo",
       "category": "seafood",
@@ -6972,29 +7041,6 @@
       },
       "per_1000": 34.21,
       "per_10000": 342.1,
-      "cospa_score": 0.81,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3095536",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 仙北市 あきたこまち パックご飯 200g×24個【特A産地】秋田県産|02_jpr-010501",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3095536.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3095536",
-      "review_average": 4.35,
-      "review_count": 20,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 4800.0
-      },
-      "per_1000": 369.23,
-      "per_10000": 3692.3,
       "cospa_score": 0.81,
       "is_sample": false
     },
@@ -7091,25 +7137,25 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1034325",
+      "id": "yahoo-y-sf_1034324",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 魚沼市 【令和8年産】【無洗米】　お米マイスター厳選　魚沼産コシヒカリ　合計9kg(3kg×3袋)",
+      "name": "ふるさと納税 魚沼市 【令和8年産】【無洗米】　お米マイスター厳選　魚沼産コシヒカリ100%　6kg(3kg×2袋)",
       "municipality": "",
       "shop": "さとふる",
-      "price": 25000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034325.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034325",
-      "review_average": 4.7,
-      "review_count": 43,
+      "price": 17000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034324.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034324",
+      "review_average": 4.71,
+      "review_count": 401,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 9000.0
+        "value": 6000.0
       },
-      "per_1000": 360.0,
-      "per_10000": 3600.0,
+      "per_1000": 352.94,
+      "per_10000": 3529.4,
       "cospa_score": 0.79,
       "is_sample": false
     },
@@ -7117,7 +7163,7 @@
       "id": "yahoo-y-sf_1302210",
       "source": "yahoo",
       "category": "seafood",
-      "name": "ふるさと納税 うなぎ 上峰町 国産うなぎ蒲焼200g前後 × 2尾  計400g前後",
+      "name": "ふるさと納税 上峰町 国産うなぎ蒲焼200g前後 × 2尾  計400g前後",
       "municipality": "",
       "shop": "さとふる",
       "price": 12000,
@@ -7160,26 +7206,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1034324",
+      "id": "yahoo-furusatochoice_5575939",
       "source": "yahoo",
       "category": "rice",
-      "name": "ふるさと納税 魚沼市 【令和8年産】【無洗米】　お米マイスター厳選　魚沼産コシヒカリ100%　6kg(3kg×2袋)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 17000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034324.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034324",
-      "review_average": 4.71,
-      "review_count": 401,
+      "name": "ふるさと納税 米 宮城県 角田市  180g×40食 パックごはん 低温製法米のおいしいごはん アイリスオーヤマ アイリスフーズ 国産米 レトルト ご飯 ごはん パック…",
+      "municipality": "宮城県角田市",
+      "shop": "ふるさとチョイス",
+      "price": 21000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5575939.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5575939",
+      "review_average": 5.0,
+      "review_count": 5,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 6000.0
+        "value": 7200.0
       },
-      "per_1000": 352.94,
-      "per_10000": 3529.4,
-      "cospa_score": 0.78,
+      "per_1000": 342.86,
+      "per_10000": 3428.6,
+      "cospa_score": 0.77,
       "is_sample": false
     },
     {
@@ -7321,29 +7367,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3195803",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 秋田市 トイレットペーパー スコッティ フラワーパック 48個 ダブル|15_nsc-101201da",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 28000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3195803.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3195803",
-      "review_average": 4.9,
-      "review_count": 69,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 48
-      },
-      "per_1000": 1.71,
-      "per_10000": 17.1,
-      "cospa_score": 0.76,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3018120",
       "source": "yahoo",
       "category": "meat",
@@ -7390,29 +7413,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furusatochoice_5575939",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 宮城県 角田市  180g×40食 パックごはん 低温製法米のおいしいごはん アイリスオーヤマ アイリスフーズ 国産米 レトルト ご飯 ごはん パック…",
-      "municipality": "宮城県角田市",
-      "shop": "ふるさとチョイス",
-      "price": 21000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5575939.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5575939",
-      "review_average": 5.0,
-      "review_count": 5,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 7200.0
-      },
-      "per_1000": 342.86,
-      "per_10000": 3428.6,
-      "cospa_score": 0.75,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1122317",
       "source": "yahoo",
       "category": "meat",
@@ -7432,6 +7432,52 @@
       },
       "per_1000": 0.89,
       "per_10000": 8.9,
+      "cospa_score": 0.75,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1234769",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 魚沼市 【令和8年産】【おいしい無洗米】お米マイスター厳選　魚沼産コシヒカリ100%　3kg",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 9000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1234769.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1234769",
+      "review_average": 4.77,
+      "review_count": 170,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3000.0
+      },
+      "per_1000": 333.33,
+      "per_10000": 3333.3,
+      "cospa_score": 0.75,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1418753",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 京丹後市 【令和8年産】無洗米京都・丹後コシヒカリ5kg美味しさ追求2026年産米",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1418753.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1418753",
+      "review_average": 4.42,
+      "review_count": 50,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 5000.0
+      },
+      "per_1000": 333.33,
+      "per_10000": 3333.3,
       "cospa_score": 0.75,
       "is_sample": false
     },
@@ -7528,52 +7574,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1234769",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 魚沼市 【令和8年産】【おいしい無洗米】お米マイスター厳選　魚沼産コシヒカリ100%　3kg",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 9000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1234769.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1234769",
-      "review_average": 4.77,
-      "review_count": 170,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3000.0
-      },
-      "per_1000": 333.33,
-      "per_10000": 3333.3,
-      "cospa_score": 0.73,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1418753",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 京丹後市 【令和8年産】無洗米京都・丹後コシヒカリ5kg美味しさ追求2026年産米",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1418753.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1418753",
-      "review_average": 4.42,
-      "review_count": 50,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 5000.0
-      },
-      "per_1000": 333.33,
-      "per_10000": 3333.3,
-      "cospa_score": 0.73,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_4005369",
       "source": "yahoo",
       "category": "fruit",
@@ -7607,7 +7607,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1111979.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1111979",
       "review_average": 4.69,
-      "review_count": 90,
+      "review_count": 91,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -7758,6 +7758,52 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_1034321",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 魚沼市 【令和8年産】雪室貯蔵米【無洗米】お米マイスター厳選1等米　魚沼産コシヒカリ100%2.5kg",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 8000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034321.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034321",
+      "review_average": 4.67,
+      "review_count": 39,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 2500.0
+      },
+      "per_1000": 312.5,
+      "per_10000": 3125.0,
+      "cospa_score": 0.7,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1246255",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 南魚沼市 新潟県 南魚沼産 コシヒカリ お米 5kg×2袋10kg 精米済み(お米の美味しい炊き方ガイド付き)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 32000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1246255.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1246255",
+      "review_average": 4.88,
+      "review_count": 33,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 10000.0
+      },
+      "per_1000": 312.5,
+      "per_10000": 3125.0,
+      "cospa_score": 0.7,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_1473885",
       "source": "yahoo",
       "category": "seafood",
@@ -7777,6 +7823,29 @@
       },
       "per_1000": 29.57,
       "per_10000": 295.7,
+      "cospa_score": 0.7,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3105964",
+      "source": "yahoo",
+      "category": "seafood",
+      "name": "ふるさと納税 気仙沼市 【年内発送】かに 本 タラバガニ 脚 ボイル済 約1kg 極太5Lサイズ[20564323] カニ",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 34000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3105964.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3105964",
+      "review_average": 4.49,
+      "review_count": 37,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 1000.0
+      },
+      "per_1000": 29.41,
+      "per_10000": 294.1,
       "cospa_score": 0.7,
       "is_sample": false
     },
@@ -7804,52 +7873,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1034321",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 魚沼市 【令和8年産】雪室貯蔵米【無洗米】お米マイスター厳選1等米　魚沼産コシヒカリ100%2.5kg",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 8000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1034321.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1034321",
-      "review_average": 4.67,
-      "review_count": 39,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 2500.0
-      },
-      "per_1000": 312.5,
-      "per_10000": 3125.0,
-      "cospa_score": 0.69,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1246255",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 南魚沼市 新潟県 南魚沼産 コシヒカリ お米 5kg×2袋10kg 精米済み(お米の美味しい炊き方ガイド付き)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 32000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1246255.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1246255",
-      "review_average": 4.88,
-      "review_count": 33,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 10000.0
-      },
-      "per_1000": 312.5,
-      "per_10000": 3125.0,
-      "cospa_score": 0.69,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_334606",
       "source": "yahoo",
       "category": "rice",
@@ -7869,7 +7892,7 @@
       },
       "per_1000": 307.69,
       "per_10000": 3076.9,
-      "cospa_score": 0.68,
+      "cospa_score": 0.69,
       "is_sample": false
     },
     {
@@ -7906,7 +7929,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1778111.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1778111",
       "review_average": 4.69,
-      "review_count": 120,
+      "review_count": 121,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -7988,6 +8011,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furusatochoice_5772837",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 米 コシヒカリ 新潟県 長岡市 75-PG24E新潟県長岡産コシヒカリ パックご飯150g×24個（特別栽培米）",
+      "municipality": "新潟県長岡市",
+      "shop": "ふるさとチョイス",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5772837.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5772837",
+      "review_average": 4.27,
+      "review_count": 15,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3600.0
+      },
+      "per_1000": 300.0,
+      "per_10000": 3000.0,
+      "cospa_score": 0.67,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_292645",
       "source": "yahoo",
       "category": "fruit",
@@ -8053,29 +8099,6 @@
       },
       "per_1000": 0.44,
       "per_10000": 4.4,
-      "cospa_score": 0.66,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furusatochoice_5772837",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 米 コシヒカリ 新潟県 長岡市 75-PG24E新潟県長岡産コシヒカリ パックご飯150g×24個（特別栽培米）",
-      "municipality": "新潟県長岡市",
-      "shop": "ふるさとチョイス",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5772837.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5772837",
-      "review_average": 4.27,
-      "review_count": 15,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3600.0
-      },
-      "per_1000": 300.0,
-      "per_10000": 3000.0,
       "cospa_score": 0.66,
       "is_sample": false
     },
@@ -8287,52 +8310,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1237702",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 嘉麻市 昔ながらの食器用洗剤　マイフレッシュ　600ml",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1237702.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1237702",
-      "review_average": 4.2,
-      "review_count": 10,
-      "in_stock": true,
-      "amount": {
-        "kind": "volume",
-        "unit": "ml",
-        "value": 600.0
-      },
-      "per_1000": 50.0,
-      "per_10000": 500.0,
-      "cospa_score": 0.64,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1239088",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 嘉麻市 台所用洗剤　弱酸性ピンクグレープフルーツフレッシュ　600ml",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1239088.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1239088",
-      "review_average": 4.76,
-      "review_count": 21,
-      "in_stock": true,
-      "amount": {
-        "kind": "volume",
-        "unit": "ml",
-        "value": 600.0
-      },
-      "per_1000": 50.0,
-      "per_10000": 500.0,
-      "cospa_score": 0.64,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1391174",
       "source": "yahoo",
       "category": "fruit",
@@ -8382,7 +8359,7 @@
       "id": "yahoo-y-sf_1081051",
       "source": "yahoo",
       "category": "seafood",
-      "name": "ふるさと納税 うなぎ 有田市 大きい! 国産うなぎ蒲焼2尾セット(総量400g以上)",
+      "name": "ふるさと納税 有田市 大きい! 国産うなぎ蒲焼2尾セット(総量400g以上)",
       "municipality": "",
       "shop": "さとふる",
       "price": 15000,
@@ -8609,6 +8586,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_3195803",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 秋田市 トイレットペーパー スコッティ フラワーパック 48個 ダブル|15_nsc-101201da",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 28000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3195803.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3195803",
+      "review_average": 4.9,
+      "review_count": 69,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 48
+      },
+      "per_1000": 1.71,
+      "per_10000": 17.1,
+      "cospa_score": 0.61,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1139881",
       "source": "yahoo",
       "category": "daily",
@@ -8635,7 +8635,7 @@
       "id": "yahoo-y-sf_1139881",
       "source": "yahoo",
       "category": "daily",
-      "name": "ふるさと納税 トイレットペーパー 沼津市 トイレットペーパー 48ロール シングル 2倍巻き 120m 8パック  静岡県 沼津市",
+      "name": "ふるさと納税 沼津市 トイレットペーパー 48ロール シングル 2倍巻き 120m 8パック  静岡県 沼津市",
       "municipality": "静岡県沼津市",
       "shop": "さとふる",
       "price": 13000,
@@ -9065,7 +9065,76 @@
       },
       "per_1000": 240.0,
       "per_10000": 2400.0,
-      "cospa_score": 0.53,
+      "cospa_score": 0.54,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3093751",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 境町 【2026年12月発送】境町産こしひかり使用 国産十八雑穀ごはん パックご飯  160g×18個",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3093751.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3093751",
+      "review_average": 4.92,
+      "review_count": 13,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 2880.0
+      },
+      "per_1000": 240.0,
+      "per_10000": 2400.0,
+      "cospa_score": 0.54,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3093751",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 境町 【2026年12月発送】境町産こしひかり使用 国産十八雑穀ごはん パックご飯  160g×18個",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3093751.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3093751",
+      "review_average": 4.58,
+      "review_count": 26,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 2880.0
+      },
+      "per_1000": 240.0,
+      "per_10000": 2400.0,
+      "cospa_score": 0.54,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3160083",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 阿賀野市 【パックご飯】 新潟県阿賀野市産みずほの輝き 150g×24食",
+      "municipality": "新潟県阿賀野市",
+      "shop": "さとふる",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3160083.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3160083",
+      "review_average": 4.25,
+      "review_count": 4,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3600.0
+      },
+      "per_1000": 240.0,
+      "per_10000": 2400.0,
+      "cospa_score": 0.54,
       "is_sample": false
     },
     {
@@ -9124,8 +9193,8 @@
       "price": 13000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1108669.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1108669",
-      "review_average": 4.51,
-      "review_count": 140,
+      "review_average": 4.5,
+      "review_count": 141,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -9157,29 +9226,6 @@
       },
       "per_1000": 76.92,
       "per_10000": 769.2,
-      "cospa_score": 0.53,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3093751",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 境町 【2026年12月発送】境町産こしひかり使用 国産十八雑穀ごはん パックご飯  160g×18個",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3093751.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3093751",
-      "review_average": 4.92,
-      "review_count": 13,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 2880.0
-      },
-      "per_1000": 240.0,
-      "per_10000": 2400.0,
       "cospa_score": 0.53,
       "is_sample": false
     },
@@ -9322,52 +9368,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3093751",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 境町 【2026年12月発送】境町産こしひかり使用 国産十八雑穀ごはん パックご飯  160g×18個",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3093751.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3093751",
-      "review_average": 4.58,
-      "review_count": 26,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 2880.0
-      },
-      "per_1000": 240.0,
-      "per_10000": 2400.0,
-      "cospa_score": 0.53,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3160083",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 阿賀野市 【パックご飯】 新潟県阿賀野市産みずほの輝き 150g×24食",
-      "municipality": "新潟県阿賀野市",
-      "shop": "さとふる",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3160083.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3160083",
-      "review_average": 4.25,
-      "review_count": 4,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3600.0
-      },
-      "per_1000": 240.0,
-      "per_10000": 2400.0,
-      "cospa_score": 0.53,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1007448",
       "source": "yahoo",
       "category": "meat",
@@ -9460,6 +9460,52 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1521172",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 三川町 まいすたぁのつや姫 パックご飯 150g×24P HM1-018",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1521172.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1521172",
+      "review_average": 5.0,
+      "review_count": 4,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3600.0
+      },
+      "per_1000": 225.0,
+      "per_10000": 2250.0,
+      "cospa_score": 0.51,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3152504",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 碧南市 【玄米パックご飯】北海道産ゆめぴりか使用 150g×24個入り H074-725",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3152504.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3152504",
+      "review_average": 4.33,
+      "review_count": 6,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 3600.0
+      },
+      "per_1000": 225.0,
+      "per_10000": 2250.0,
+      "cospa_score": 0.51,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_3057934",
       "source": "yahoo",
       "category": "rice",
@@ -9479,7 +9525,7 @@
       },
       "per_1000": 227.27,
       "per_10000": 2272.7,
-      "cospa_score": 0.5,
+      "cospa_score": 0.51,
       "is_sample": false
     },
     {
@@ -9529,52 +9575,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1521172",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 三川町 まいすたぁのつや姫 パックご飯 150g×24P HM1-018",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1521172.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1521172",
-      "review_average": 5.0,
-      "review_count": 4,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3600.0
-      },
-      "per_1000": 225.0,
-      "per_10000": 2250.0,
-      "cospa_score": 0.49,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3152504",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 碧南市 【玄米パックご飯】北海道産ゆめぴりか使用 150g×24個入り H074-725",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3152504.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3152504",
-      "review_average": 4.33,
-      "review_count": 6,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 3600.0
-      },
-      "per_1000": 225.0,
-      "per_10000": 2250.0,
-      "cospa_score": 0.49,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1393110",
       "source": "yahoo",
       "category": "meat",
@@ -9598,29 +9598,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1002891",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 白老町 牛の里ビーフハンバーグ【110g×10個】特製ソースの詰合せ",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1002891.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1002891",
-      "review_average": 4.62,
-      "review_count": 93,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 1100.0
-      },
-      "per_1000": 73.33,
-      "per_10000": 733.3,
-      "cospa_score": 0.48,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3045081",
       "source": "yahoo",
       "category": "rice",
@@ -9640,6 +9617,29 @@
       },
       "per_1000": 218.18,
       "per_10000": 2181.8,
+      "cospa_score": 0.49,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1002891",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 白老町 牛の里ビーフハンバーグ【110g×10個】特製ソースの詰合せ",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1002891.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1002891",
+      "review_average": 4.62,
+      "review_count": 93,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 1100.0
+      },
+      "per_1000": 73.33,
+      "per_10000": 733.3,
       "cospa_score": 0.48,
       "is_sample": false
     },
@@ -9677,7 +9677,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1622305.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1622305",
       "review_average": 4.46,
-      "review_count": 255,
+      "review_count": 256,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -9686,6 +9686,52 @@
       },
       "per_1000": 71.43,
       "per_10000": 714.3,
+      "cospa_score": 0.47,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1237702",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 嘉麻市 昔ながらの食器用洗剤　マイフレッシュ　600ml",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1237702.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1237702",
+      "review_average": 4.2,
+      "review_count": 10,
+      "in_stock": true,
+      "amount": {
+        "kind": "volume",
+        "unit": "ml",
+        "value": 600.0
+      },
+      "per_1000": 50.0,
+      "per_10000": 500.0,
+      "cospa_score": 0.47,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1239088",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 嘉麻市 台所用洗剤　弱酸性ピンクグレープフルーツフレッシュ　600ml",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1239088.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1239088",
+      "review_average": 4.76,
+      "review_count": 21,
+      "in_stock": true,
+      "amount": {
+        "kind": "volume",
+        "unit": "ml",
+        "value": 600.0
+      },
+      "per_1000": 50.0,
+      "per_10000": 500.0,
       "cospa_score": 0.47,
       "is_sample": false
     },
@@ -10104,6 +10150,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-groin2-pork_20051",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "チャーシュー 焼豚 焼き豚 訳あり ワケアリ 訳アリ 切り落とし 切落し 個包装 国産 取り寄せ タレ たれ ラーメン用 業務用 500g チャーシュー麺",
+      "municipality": "",
+      "shop": "豚肉料理専門店グロワグロワ",
+      "price": 3333,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fgroin2-pork%2F20051.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/groin2-pork_20051",
+      "review_average": 4.79,
+      "review_count": 14,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 500.0
+      },
+      "per_1000": 150.02,
+      "per_10000": 1500.2,
+      "cospa_score": 0.34,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_3018112",
       "source": "yahoo",
       "category": "meat",
@@ -10192,29 +10261,6 @@
       },
       "per_1000": 148.37,
       "per_10000": 1483.7,
-      "cospa_score": 0.33,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-groin2-pork_20051",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "チャーシュー 焼豚 焼き豚 訳あり ワケアリ 訳アリ 切り落とし 切落し 個包装 国産 取り寄せ タレ たれ ラーメン用 業務用 500g チャーシュー麺",
-      "municipality": "",
-      "shop": "豚肉料理専門店グロワグロワ",
-      "price": 3333,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fgroin2-pork%2F20051.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/groin2-pork_20051",
-      "review_average": 4.79,
-      "review_count": 14,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 500.0
-      },
-      "per_1000": 150.02,
-      "per_10000": 1500.2,
       "cospa_score": 0.33,
       "is_sample": false
     },
@@ -10863,29 +10909,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furusatochoice_5844496",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 旬の鮮魚等 北海道 羅臼町  2026年12月発送 北海道 知床羅臼産 天然ぶり刺身 750g（250g ×3パック） 魚 海産物 魚介 魚介類 ブリ 鰤 刺身 ご飯…",
-      "municipality": "北海道羅臼町",
-      "shop": "ふるさとチョイス",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F5844496.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_5844496",
-      "review_average": 4.0,
-      "review_count": 7,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 750.0
-      },
-      "per_1000": 50.0,
-      "per_10000": 500.0,
-      "cospa_score": 0.11,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3084452",
       "source": "yahoo",
       "category": "meat",
@@ -10974,7 +10997,7 @@
       },
       "per_1000": 0.14,
       "per_10000": 1.4,
-      "cospa_score": 0.06,
+      "cospa_score": 0.05,
       "is_sample": false
     },
     {
@@ -10997,29 +11020,6 @@
       },
       "per_1000": 0.09,
       "per_10000": 0.9,
-      "cospa_score": 0.04,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_226357",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 洗濯洗剤 NANOX one 洗浄プラス 本体 1個 詰替え 特大 5個 千葉県市原市",
-      "municipality": "千葉県市原市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F226357.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_226357",
-      "review_average": 4.61,
-      "review_count": 18,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 1
-      },
-      "per_1000": 0.07,
-      "per_10000": 0.7,
       "cospa_score": 0.03,
       "is_sample": false
     },
