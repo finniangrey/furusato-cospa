@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-25T12:03:13+09:00",
+  "generated_at": "2026-11-26T11:13:18+09:00",
   "mode": "live",
   "sources": [
     "yahoo"
   ],
-  "count": 488,
+  "count": 486,
   "items": [
     {
       "id": "yahoo-y-furusato_3271773",
@@ -26,7 +26,7 @@
       },
       "per_1000": 20.0,
       "per_10000": 200.0,
-      "cospa_score": 15.87,
+      "cospa_score": 16.88,
       "is_sample": false
     },
     {
@@ -72,7 +72,7 @@
       },
       "per_1000": 11.08,
       "per_10000": 110.8,
-      "cospa_score": 8.79,
+      "cospa_score": 9.35,
       "is_sample": false
     },
     {
@@ -168,26 +168,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_258764",
+      "id": "yahoo-y-furusato_1686736",
       "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 【茨城共通返礼品】 冷凍餃子 120個 餃子 豚肉 K1497 茨城県境町",
-      "municipality": "茨城県境町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F258764.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_258764",
-      "review_average": 4.67,
-      "review_count": 51,
+      "category": "fruit",
+      "name": "ふるさと納税 八幡浜市 【今シーズン発送開始】五代目が厳選!訳あり愛媛みかん 11kg 新口農園【C70-136】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1686736.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1686736",
+      "review_average": 3.99,
+      "review_count": 72,
       "in_stock": true,
       "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 120
+        "kind": "weight",
+        "unit": "g",
+        "value": 11000.0
       },
-      "per_1000": 8.0,
-      "per_10000": 80.0,
-      "cospa_score": 6.35,
+      "per_1000": 846.15,
+      "per_10000": 8461.5,
+      "cospa_score": 6.41,
       "is_sample": false
     },
     {
@@ -224,7 +224,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1389616.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1389616",
       "review_average": 4.55,
-      "review_count": 1811,
+      "review_count": 1818,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -247,7 +247,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1389618.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1389618",
       "review_average": 4.74,
-      "review_count": 193,
+      "review_count": 194,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -454,7 +454,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1696077.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1696077",
       "review_average": 4.57,
-      "review_count": 170,
+      "review_count": 181,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -868,7 +868,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1458484.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1458484",
       "review_average": 4.73,
-      "review_count": 312,
+      "review_count": 313,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -891,7 +891,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3135822.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3135822",
       "review_average": 4.71,
-      "review_count": 630,
+      "review_count": 631,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1007,29 +1007,6 @@
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1360194",
       "review_average": 4.64,
       "review_count": 45,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 5000.0
-      },
-      "per_1000": 416.67,
-      "per_10000": 4166.7,
-      "cospa_score": 3.15,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1650682",
-      "source": "yahoo",
-      "category": "fruit",
-      "name": "ふるさと納税 八幡浜市 【訳あり】星乃せとか 柑橘の大トロ(5kg)【C45-97】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1650682.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1650682",
-      "review_average": 4.31,
-      "review_count": 72,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1167,7 +1144,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1731782.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1731782",
       "review_average": 4.94,
-      "review_count": 146,
+      "review_count": 148,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1200,29 +1177,6 @@
       "per_1000": 357.14,
       "per_10000": 3571.4,
       "cospa_score": 2.7,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1553254",
-      "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 森町 【訳あり】浜茹でオオズワイガニ 2.0kg 詰め込みセット 北海道噴火湾産",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1553254.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1553254",
-      "review_average": 3.74,
-      "review_count": 42,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 2000.0
-      },
-      "per_1000": 111.11,
-      "per_10000": 1111.1,
-      "cospa_score": 2.67,
       "is_sample": false
     },
     {
@@ -1328,7 +1282,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1508877.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1508877",
       "review_average": 4.37,
-      "review_count": 1433,
+      "review_count": 1434,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -1580,8 +1534,8 @@
       "price": 11500,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1625485.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1625485",
-      "review_average": 3.92,
-      "review_count": 51,
+      "review_average": 3.94,
+      "review_count": 52,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -2570,7 +2524,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3193115.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3193115",
       "review_average": 4.74,
-      "review_count": 81,
+      "review_count": 82,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -2685,7 +2639,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3051029.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3051029",
       "review_average": 4.31,
-      "review_count": 329,
+      "review_count": 331,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -2901,6 +2855,75 @@
       },
       "per_1000": 571.43,
       "per_10000": 5714.3,
+      "cospa_score": 1.47,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_696280",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 AA61-31F どっちのハンバーグ!?デミグラスソース20個セット（ビーフ・合挽 各10個） ハンバーグ 福岡県福智町",
+      "municipality": "福岡県福智町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 11500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F696280.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_696280",
+      "review_average": 4.53,
+      "review_count": 81,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.74,
+      "per_10000": 17.4,
+      "cospa_score": 1.47,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3144544",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 福智町 Best4バーグ ハンバーグ 20個セット(合挽4種 各5個)",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 11500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3144544.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3144544",
+      "review_average": 4.8,
+      "review_count": 120,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.74,
+      "per_10000": 17.4,
+      "cospa_score": 1.47,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3144544",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 福智町 Best4バーグ ハンバーグ 20個セット(合挽4種 各5個)",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 11500,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3144544.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3144544",
+      "review_average": 4.56,
+      "review_count": 147,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.74,
+      "per_10000": 17.4,
       "cospa_score": 1.47,
       "is_sample": false
     },
@@ -3158,6 +3181,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-sf_3121420",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 福智町 どっちのハンバーグ!?デミグラスソース20個セット",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3121420.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3121420",
+      "review_average": 4.6,
+      "review_count": 209,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.67,
+      "per_10000": 16.7,
+      "cospa_score": 1.41,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-sf_3150781",
       "source": "yahoo",
       "category": "seafood",
@@ -3181,72 +3227,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_696280",
+      "id": "yahoo-furusatochoice_4931767",
       "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 AA61-31F どっちのハンバーグ!?デミグラスソース20個セット（ビーフ・合挽 各10個） ハンバーグ 福岡県福智町",
-      "municipality": "福岡県福智町",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 11500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F696280.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_696280",
-      "review_average": 4.53,
-      "review_count": 81,
+      "category": "fruit",
+      "name": "ふるさと納税 菓子 アイス 宮城県 白石市 フロム蔵王 Hybrid NEO スーパーマルチアイスBOX 24個 6種 各4個 | クッキーミルク キャラメル ミルク チョコ いちご…",
+      "municipality": "宮城県白石市",
+      "shop": "ふるさとチョイス",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F4931767.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_4931767",
+      "review_average": 4.64,
+      "review_count": 28,
       "in_stock": true,
       "amount": {
         "kind": "count",
         "unit": "個",
-        "value": 20
+        "value": 24
       },
-      "per_1000": 1.74,
-      "per_10000": 17.4,
-      "cospa_score": 1.38,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3144544",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 福智町 Best4バーグ ハンバーグ 20個セット(合挽4種 各5個)",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 11500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3144544.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3144544",
-      "review_average": 4.8,
-      "review_count": 120,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.74,
-      "per_10000": 17.4,
-      "cospa_score": 1.38,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_3144544",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 福智町 Best4バーグ ハンバーグ 20個セット(合挽4種 各5個)",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 11500,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3144544.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3144544",
-      "review_average": 4.56,
-      "review_count": 147,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.74,
-      "per_10000": 17.4,
-      "cospa_score": 1.38,
+      "per_1000": 1.71,
+      "per_10000": 17.1,
+      "cospa_score": 1.39,
       "is_sample": false
     },
     {
@@ -3490,7 +3490,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1510665.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1510665",
       "review_average": 4.57,
-      "review_count": 1283,
+      "review_count": 1285,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -3536,7 +3536,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3050597.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3050597",
       "review_average": 4.59,
-      "review_count": 427,
+      "review_count": 429,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -3582,7 +3582,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3000691.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3000691",
       "review_average": 4.82,
-      "review_count": 7774,
+      "review_count": 7775,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -3710,29 +3710,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_3121420",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 福智町 どっちのハンバーグ!?デミグラスソース20個セット",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3121420.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3121420",
-      "review_average": 4.6,
-      "review_count": 209,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.67,
-      "per_10000": 16.7,
-      "cospa_score": 1.33,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1283246",
       "source": "yahoo",
       "category": "rice",
@@ -3775,6 +3752,29 @@
       },
       "per_1000": 3.69,
       "per_10000": 36.9,
+      "cospa_score": 1.32,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_3288332",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 甲佐町 ティッシュペーパーソフトパック　400枚(200組)60パック【ZC】",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 13000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3288332.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3288332",
+      "review_average": 3.96,
+      "review_count": 386,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "枚",
+        "value": 400
+      },
+      "per_1000": 30.77,
+      "per_10000": 307.7,
       "cospa_score": 1.32,
       "is_sample": false
     },
@@ -4193,29 +4193,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3059296",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 富士市 ソフトパックティッシュ 100個「シンプルスタイル」 箱なし ピロー ティッシュペーパー 日用品",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 30000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3059296.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3059296",
-      "review_average": 4.75,
-      "review_count": 20,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 100
-      },
-      "per_1000": 3.33,
-      "per_10000": 33.3,
-      "cospa_score": 1.19,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_3178146",
       "source": "yahoo",
       "category": "meat",
@@ -4308,29 +4285,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_3288332",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 甲佐町 ティッシュペーパーソフトパック　400枚(200組)60パック【ZC】",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3288332.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3288332",
-      "review_average": 3.96,
-      "review_count": 386,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "枚",
-        "value": 400
-      },
-      "per_1000": 30.77,
-      "per_10000": 307.7,
-      "cospa_score": 1.18,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1104733",
       "source": "yahoo",
       "category": "rice",
@@ -4410,7 +4364,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3061949.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3061949",
       "review_average": 4.77,
-      "review_count": 77,
+      "review_count": 78,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -4906,6 +4860,52 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-y-furusato_1302110",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 石狩市 北海道産牛肉100% ありがとうハンバーグ 24個 解凍せずにすぐ焼ける!",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 19000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1302110.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1302110",
+      "review_average": 4.76,
+      "review_count": 83,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 24
+      },
+      "per_1000": 1.26,
+      "per_10000": 12.6,
+      "cospa_score": 1.06,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1302110",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 石狩市 北海道産牛肉100% ありがとうハンバーグ 24個 解凍せずにすぐ焼ける!",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 19000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1302110.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1302110",
+      "review_average": 4.76,
+      "review_count": 306,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 24
+      },
+      "per_1000": 1.26,
+      "per_10000": 12.6,
+      "cospa_score": 1.06,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-y-furusato_1144534",
       "source": "yahoo",
       "category": "rice",
@@ -5040,29 +5040,6 @@
       },
       "per_1000": 6.19,
       "per_10000": 61.9,
-      "cospa_score": 1.02,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furusatochoice_4931767",
-      "source": "yahoo",
-      "category": "fruit",
-      "name": "ふるさと納税 菓子 アイス 宮城県 白石市 フロム蔵王 Hybrid NEO スーパーマルチアイスBOX 24個 6種 各4個 | クッキーミルク キャラメル ミルク チョコ いちご…",
-      "municipality": "宮城県白石市",
-      "shop": "ふるさとチョイス",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurusatochoice%2F4931767.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furusatochoice_4931767",
-      "review_average": 4.64,
-      "review_count": 28,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 24
-      },
-      "per_1000": 1.71,
-      "per_10000": 17.1,
       "cospa_score": 1.02,
       "is_sample": false
     },
@@ -5366,13 +5343,59 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furunavi_451389",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 クラリスボックスティッシュ60箱(1箱220組(440枚))(5個入り×12セット)【配送不可地域：離島・沖縄県】【1256759】 栃木県小山市",
+      "municipality": "栃木県小山市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 18900,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F451389.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_451389",
+      "review_average": 4.68,
+      "review_count": 154,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "枚",
+        "value": 440
+      },
+      "per_1000": 23.28,
+      "per_10000": 232.8,
+      "cospa_score": 1.0,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_456222",
+      "source": "yahoo",
+      "category": "seafood",
+      "name": "ふるさと納税 うなぎ蒲焼 3尾 国産 訳あり うなぎ 鰻 K1804 茨城県境町",
+      "municipality": "茨城県境町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 12000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F456222.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_456222",
+      "review_average": 4.42,
+      "review_count": 67,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "尾",
+        "value": 3
+      },
+      "per_1000": 0.25,
+      "per_10000": 2.5,
+      "cospa_score": 1.0,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_466236",
       "source": "yahoo",
       "category": "meat",
       "name": "ふるさと納税 【TVで紹介されました！】国産の焼き鳥★縁起が良い末広がり88本★国産 焼きとりセット 7種88本 - 国産 焼き鳥 焼鳥 セット モモ .. 熊本県甲佐町",
       "municipality": "熊本県甲佐町",
       "shop": "ふるなび(ふるさと納税)",
-      "price": 16000,
+      "price": 19000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F466236.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_466236",
       "review_average": 4.39,
@@ -5383,31 +5406,8 @@
         "unit": "本",
         "value": 88
       },
-      "per_1000": 5.5,
-      "per_10000": 55.0,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1302110",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 石狩市 北海道産牛肉100% ありがとうハンバーグ 24個 解凍せずにすぐ焼ける!",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 19000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1302110.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1302110",
-      "review_average": 4.76,
-      "review_count": 83,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 24
-      },
-      "per_1000": 1.26,
-      "per_10000": 12.6,
+      "per_1000": 4.63,
+      "per_10000": 46.3,
       "cospa_score": 1.0,
       "is_sample": false
     },
@@ -5536,36 +5536,13 @@
       "price": 18000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3105771.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3105771",
-      "review_average": 4.33,
-      "review_count": 46,
+      "review_average": 4.34,
+      "review_count": 47,
       "in_stock": true,
       "amount": {
         "kind": "count",
         "unit": "本",
         "value": 30
-      },
-      "per_1000": 1.67,
-      "per_10000": 16.7,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3121420",
-      "source": "yahoo",
-      "category": "fruit",
-      "name": "ふるさと納税 福智町 どっちのハンバーグ!?デミグラスソース20個セット",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 12000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3121420.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3121420",
-      "review_average": 4.65,
-      "review_count": 43,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
       },
       "per_1000": 1.67,
       "per_10000": 16.7,
@@ -5757,29 +5734,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1302110",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 石狩市 北海道産牛肉100% ありがとうハンバーグ 24個 解凍せずにすぐ焼ける!",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 19000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1302110.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1302110",
-      "review_average": 4.76,
-      "review_count": 306,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 24
-      },
-      "per_1000": 1.26,
-      "per_10000": 12.6,
-      "cospa_score": 1.0,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_3013355",
       "source": "yahoo",
       "category": "meat",
@@ -5852,10 +5806,10 @@
       "id": "yahoo-y-sf_3114778",
       "source": "yahoo",
       "category": "meat",
-      "name": "ふるさと納税 甲佐町 ★縁起が良い末広がり88本★国産 焼きとりセット &lt;生冷凍&gt;丁寧仕上げの焼き鳥(やきとり)ZA",
+      "name": "ふるさと納税 甲佐町 ★縁起が良い末広がり88本★国産 焼きとりセット &lt;生冷凍&gt;丁寧仕上げの焼き鳥(やきとり)ZB",
       "municipality": "",
       "shop": "さとふる",
-      "price": 16000,
+      "price": 19000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3114778.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3114778",
       "review_average": 4.62,
@@ -5866,8 +5820,8 @@
         "unit": "本",
         "value": 88
       },
-      "per_1000": 5.5,
-      "per_10000": 55.0,
+      "per_1000": 4.63,
+      "per_10000": 46.3,
       "cospa_score": 1.0,
       "is_sample": false
     },
@@ -6033,29 +5987,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1422949",
-      "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 泉佐野市 大型ボイルタラバガニ 1kg 5Lサイズ カット済み 訳あり 規格外",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 25000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1422949.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1422949",
-      "review_average": 3.69,
-      "review_count": 42,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 1000.0
-      },
-      "per_1000": 40.0,
-      "per_10000": 400.0,
-      "cospa_score": 0.96,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-furunavi_667296",
       "source": "yahoo",
       "category": "daily",
@@ -6076,6 +6007,75 @@
       "per_1000": 3.0,
       "per_10000": 30.0,
       "cospa_score": 0.95,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_114035",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 鉄板焼ハンバーグ デミソース 20個【A8-102】 福岡県飯塚市",
+      "municipality": "福岡県飯塚市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F114035.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_114035",
+      "review_average": 4.67,
+      "review_count": 1544,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.11,
+      "per_10000": 11.1,
+      "cospa_score": 0.94,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_1043715",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 飯塚市 鉄板焼ハンバーグ(デミソース)20個セット",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1043715.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1043715",
+      "review_average": 4.67,
+      "review_count": 326,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.11,
+      "per_10000": 11.1,
+      "cospa_score": 0.94,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1043715",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 飯塚市 鉄板焼ハンバーグ(デミソース)20個セット",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1043715.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1043715",
+      "review_average": 4.66,
+      "review_count": 5815,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 20
+      },
+      "per_1000": 1.11,
+      "per_10000": 11.1,
+      "cospa_score": 0.94,
       "is_sample": false
     },
     {
@@ -6214,6 +6214,29 @@
       "per_1000": 38.89,
       "per_10000": 388.9,
       "cospa_score": 0.93,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_217049",
+      "source": "yahoo",
+      "category": "daily",
+      "name": "ふるさと納税 おやまくま春夏秋冬ボックスティッシュ　60箱(5箱入り×12セット)(1箱150組(300枚))【配送不可地域：離島・沖縄県】【1093660.. 栃木県小山市",
+      "municipality": "栃木県小山市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 14000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F217049.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_217049",
+      "review_average": 4.51,
+      "review_count": 37,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "枚",
+        "value": 300
+      },
+      "per_1000": 21.43,
+      "per_10000": 214.3,
+      "cospa_score": 0.92,
       "is_sample": false
     },
     {
@@ -6424,52 +6447,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_114035",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 鉄板焼ハンバーグ デミソース 20個【A8-102】 福岡県飯塚市",
-      "municipality": "福岡県飯塚市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F114035.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_114035",
-      "review_average": 4.67,
-      "review_count": 1544,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.11,
-      "per_10000": 11.1,
-      "cospa_score": 0.88,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1043715",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 飯塚市 鉄板焼ハンバーグ(デミソース)20個セット",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1043715.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1043715",
-      "review_average": 4.67,
-      "review_count": 326,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.11,
-      "per_10000": 11.1,
-      "cospa_score": 0.88,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1297128",
       "source": "yahoo",
       "category": "rice",
@@ -6489,29 +6466,6 @@
       },
       "per_1000": 392.73,
       "per_10000": 3927.3,
-      "cospa_score": 0.88,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1043715",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 飯塚市 鉄板焼ハンバーグ(デミソース)20個セット",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1043715.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1043715",
-      "review_average": 4.66,
-      "review_count": 5815,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 20
-      },
-      "per_1000": 1.11,
-      "per_10000": 11.1,
       "cospa_score": 0.88,
       "is_sample": false
     },
@@ -6536,6 +6490,29 @@
       "per_1000": 133.33,
       "per_10000": 1333.3,
       "cospa_score": 0.88,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_280011",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 絶品！九州産焼鳥 5種盛合せ 60本（タレ付き） 焼鳥 C-627 佐賀県上峰町",
+      "municipality": "佐賀県上峰町",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F280011.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_280011",
+      "review_average": 4.43,
+      "review_count": 124,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "本",
+        "value": 60
+      },
+      "per_1000": 4.0,
+      "per_10000": 40.0,
+      "cospa_score": 0.86,
       "is_sample": false
     },
     {
@@ -6608,26 +6585,26 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-sf_1321292",
+      "id": "yahoo-y-furusato_3113796",
       "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 最上町 【無洗米】さとふる限定!令和8年産山形県産特別栽培米つや姫5kg",
+      "category": "seafood",
+      "name": "ふるさと納税 根室市 たらばがにの脚1kg〜1.1kg C-25023",
       "municipality": "",
-      "shop": "さとふる",
-      "price": 13000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1321292.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1321292",
-      "review_average": 5.0,
-      "review_count": 25,
+      "shop": "Yahoo!ふるさと納税",
+      "price": 31000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3113796.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3113796",
+      "review_average": 4.62,
+      "review_count": 82,
       "in_stock": true,
       "amount": {
         "kind": "weight",
         "unit": "g",
-        "value": 5000.0
+        "value": 1100.0
       },
-      "per_1000": 384.62,
-      "per_10000": 3846.2,
-      "cospa_score": 0.86,
+      "per_1000": 35.48,
+      "per_10000": 354.8,
+      "cospa_score": 0.85,
       "is_sample": false
     },
     {
@@ -6650,6 +6627,29 @@
       },
       "per_1000": 129.03,
       "per_10000": 1290.3,
+      "cospa_score": 0.85,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_3113796",
+      "source": "yahoo",
+      "category": "seafood",
+      "name": "ふるさと納税 根室市 たらばがにの脚1kg〜1.1kg C-25023",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 31000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F3113796.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_3113796",
+      "review_average": 4.39,
+      "review_count": 108,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 1100.0
+      },
+      "per_1000": 35.48,
+      "per_10000": 354.8,
       "cospa_score": 0.85,
       "is_sample": false
     },
@@ -7022,29 +7022,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-furunavi_217049",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 おやまくま春夏秋冬ボックスティッシュ　60箱(5箱入り×12セット)(1箱150組(300枚))【配送不可地域：離島・沖縄県】【1093660.. 栃木県小山市",
-      "municipality": "栃木県小山市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 14000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F217049.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_217049",
-      "review_average": 4.51,
-      "review_count": 37,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "枚",
-        "value": 300
-      },
-      "per_1000": 21.43,
-      "per_10000": 214.3,
-      "cospa_score": 0.82,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-furusato_1133050",
       "source": "yahoo",
       "category": "seafood",
@@ -7153,29 +7130,6 @@
         "kind": "weight",
         "unit": "g",
         "value": 400.0
-      },
-      "per_1000": 33.33,
-      "per_10000": 333.3,
-      "cospa_score": 0.8,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1622891",
-      "source": "yahoo",
-      "category": "seafood",
-      "name": "ふるさと納税 志布志市 鹿児島県産うなぎ蒲焼 名水慈鰻 2尾(1尾約236~270g)《計約500g》",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 15000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1622891.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1622891",
-      "review_average": 4.7,
-      "review_count": 80,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 500.0
       },
       "per_1000": 33.33,
       "per_10000": 333.3,
@@ -7445,8 +7399,8 @@
       "price": 11000,
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1778111.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1778111",
-      "review_average": 4.7,
-      "review_count": 122,
+      "review_average": 4.69,
+      "review_count": 123,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -7525,6 +7479,75 @@
       "per_1000": 115.38,
       "per_10000": 1153.8,
       "cospa_score": 0.76,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_202623",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 5種のチーズ入り鉄板焼ハンバーグ(デミグラスソース)16個【A8-103】 福岡県飯塚市",
+      "municipality": "福岡県飯塚市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F202623.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_202623",
+      "review_average": 4.66,
+      "review_count": 73,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 16
+      },
+      "per_1000": 0.89,
+      "per_10000": 8.9,
+      "cospa_score": 0.75,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1122317",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 飯塚市 5種のチーズ入り鉄板焼ハンバーグ(デミグラスソース)16個",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 18000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1122317.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1122317",
+      "review_average": 4.66,
+      "review_count": 419,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 16
+      },
+      "per_1000": 0.89,
+      "per_10000": 8.9,
+      "cospa_score": 0.75,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1211835",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 田村市 【無洗米】田村産コシヒカリ5kg 【令和8年産】",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 15000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1211835.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1211835",
+      "review_average": 4.55,
+      "review_count": 55,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 5000.0
+      },
+      "per_1000": 333.33,
+      "per_10000": 3333.3,
+      "cospa_score": 0.75,
       "is_sample": false
     },
     {
@@ -7623,7 +7646,7 @@
       "id": "yahoo-y-sf_1111979",
       "source": "yahoo",
       "category": "seafood",
-      "name": "ふるさと納税 うなぎ 志布志市 【さとふる限定】鹿児島県産うなぎ蒲焼名水慈鰻5尾(合計700g~800g)",
+      "name": "ふるさと納税 志布志市 【さとふる限定】鹿児島県産うなぎ蒲焼名水慈鰻5尾(合計700g~800g)",
       "municipality": "",
       "shop": "さとふる",
       "price": 23000,
@@ -7699,7 +7722,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1412204.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1412204",
       "review_average": 4.73,
-      "review_count": 408,
+      "review_count": 410,
       "in_stock": true,
       "amount": {
         "kind": "weight",
@@ -7709,29 +7732,6 @@
       "per_1000": 30.0,
       "per_10000": 300.0,
       "cospa_score": 0.72,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_202623",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 5種のチーズ入り鉄板焼ハンバーグ(デミグラスソース)16個【A8-103】 福岡県飯塚市",
-      "municipality": "福岡県飯塚市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F202623.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_202623",
-      "review_average": 4.66,
-      "review_count": 73,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 16
-      },
-      "per_1000": 0.89,
-      "per_10000": 8.9,
-      "cospa_score": 0.71,
       "is_sample": false
     },
     {
@@ -7777,29 +7777,6 @@
       },
       "per_1000": 29.41,
       "per_10000": 294.1,
-      "cospa_score": 0.71,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1122317",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 飯塚市 5種のチーズ入り鉄板焼ハンバーグ(デミグラスソース)16個",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 18000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1122317.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1122317",
-      "review_average": 4.66,
-      "review_count": 419,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 16
-      },
-      "per_1000": 0.89,
-      "per_10000": 8.9,
       "cospa_score": 0.71,
       "is_sample": false
     },
@@ -7892,29 +7869,6 @@
       },
       "per_1000": 92.86,
       "per_10000": 928.6,
-      "cospa_score": 0.7,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_876231",
-      "source": "yahoo",
-      "category": "rice",
-      "name": "ふるさと納税 75-PG48F新潟県長岡産コシヒカリ パックご飯150g×48個（特別栽培米） 新潟県長岡市",
-      "municipality": "新潟県長岡市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 23000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F876231.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_876231",
-      "review_average": 4.75,
-      "review_count": 4,
-      "in_stock": true,
-      "amount": {
-        "kind": "weight",
-        "unit": "g",
-        "value": 7200.0
-      },
-      "per_1000": 313.04,
-      "per_10000": 3130.4,
       "cospa_score": 0.7,
       "is_sample": false
     },
@@ -8152,7 +8106,7 @@
       "id": "yahoo-y-sf_1111978",
       "source": "yahoo",
       "category": "seafood",
-      "name": "ふるさと納税 うなぎ 志布志市 【さとふる限定】鹿児島県産うなぎ蒲焼　2尾(合計280g〜320g)",
+      "name": "ふるさと納税 志布志市 【さとふる限定】鹿児島県産うなぎ蒲焼　2尾(合計280g〜320g)",
       "municipality": "",
       "shop": "さとふる",
       "price": 10000,
@@ -8724,6 +8678,29 @@
       "is_sample": false
     },
     {
+      "id": "yahoo-furunavi_177417",
+      "source": "yahoo",
+      "category": "fruit",
+      "name": "ふるさと納税 かみのやまシュー 6個 シュークリーム 0048-2611 山形県上山市",
+      "municipality": "山形県上山市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 8000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F177417.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_177417",
+      "review_average": 4.51,
+      "review_count": 354,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 6
+      },
+      "per_1000": 0.75,
+      "per_10000": 7.5,
+      "cospa_score": 0.61,
+      "is_sample": false
+    },
+    {
       "id": "yahoo-furunavi_343531",
       "source": "yahoo",
       "category": "meat",
@@ -8766,29 +8743,6 @@
       },
       "per_1000": 3.69,
       "per_10000": 36.9,
-      "cospa_score": 0.61,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_3195803",
-      "source": "yahoo",
-      "category": "daily",
-      "name": "ふるさと納税 秋田市 トイレットペーパー スコッティ フラワーパック 48個 ダブル|15_nsc-101201da",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 28000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3195803.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3195803",
-      "review_average": 4.9,
-      "review_count": 69,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 48
-      },
-      "per_1000": 1.71,
-      "per_10000": 17.1,
       "cospa_score": 0.61,
       "is_sample": false
     },
@@ -9263,7 +9217,7 @@
       "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F3280703.html",
       "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_3280703",
       "review_average": 4.72,
-      "review_count": 114,
+      "review_count": 115,
       "in_stock": true,
       "amount": {
         "kind": "count",
@@ -9387,6 +9341,75 @@
       },
       "per_1000": 68.42,
       "per_10000": 684.2,
+      "cospa_score": 0.52,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_1007448",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 唐津市 【入金確認後最短2日発送】【創業60年】老舗肉屋の特上ハンバーグ10個",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1007448.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1007448",
+      "review_average": 4.79,
+      "review_count": 370,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 10
+      },
+      "per_1000": 0.62,
+      "per_10000": 6.2,
+      "cospa_score": 0.52,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-furusato_1096281",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 唐津市 【創業60年】老舗肉屋の特上ハンバーグ15個",
+      "municipality": "",
+      "shop": "Yahoo!ふるさと納税",
+      "price": 24000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1096281.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1096281",
+      "review_average": 4.71,
+      "review_count": 73,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 15
+      },
+      "per_1000": 0.62,
+      "per_10000": 6.2,
+      "cospa_score": 0.52,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-y-sf_1007448",
+      "source": "yahoo",
+      "category": "meat",
+      "name": "ふるさと納税 ハンバーグ 唐津市 【入金確認後最短2日発送】【創業60年】老舗肉屋の特上ハンバーグ10個",
+      "municipality": "",
+      "shop": "さとふる",
+      "price": 16000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1007448.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1007448",
+      "review_average": 4.72,
+      "review_count": 1430,
+      "in_stock": true,
+      "amount": {
+        "kind": "count",
+        "unit": "個",
+        "value": 10
+      },
+      "per_1000": 0.62,
+      "per_10000": 6.2,
       "cospa_score": 0.52,
       "is_sample": false
     },
@@ -9552,52 +9575,6 @@
       "is_sample": false
     },
     {
-      "id": "yahoo-y-furusato_1007448",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 唐津市 【入金確認後最短2日発送】【創業60年】老舗肉屋の特上ハンバーグ10個",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1007448.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1007448",
-      "review_average": 4.79,
-      "review_count": 370,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 10
-      },
-      "per_1000": 0.62,
-      "per_10000": 6.2,
-      "cospa_score": 0.49,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-furusato_1096281",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 唐津市 【創業60年】老舗肉屋の特上ハンバーグ15個",
-      "municipality": "",
-      "shop": "Yahoo!ふるさと納税",
-      "price": 24000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-furusato%2F1096281.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-furusato_1096281",
-      "review_average": 4.71,
-      "review_count": 73,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 15
-      },
-      "per_1000": 0.62,
-      "per_10000": 6.2,
-      "cospa_score": 0.49,
-      "is_sample": false
-    },
-    {
       "id": "yahoo-y-sf_1002891",
       "source": "yahoo",
       "category": "meat",
@@ -9617,29 +9594,6 @@
       },
       "per_1000": 73.33,
       "per_10000": 733.3,
-      "cospa_score": 0.49,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-y-sf_1007448",
-      "source": "yahoo",
-      "category": "meat",
-      "name": "ふるさと納税 ハンバーグ 唐津市 【入金確認後最短2日発送】【創業60年】老舗肉屋の特上ハンバーグ10個",
-      "municipality": "",
-      "shop": "さとふる",
-      "price": 16000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fy-sf%2F1007448.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/y-sf_1007448",
-      "review_average": 4.72,
-      "review_count": 1430,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 10
-      },
-      "per_1000": 0.62,
-      "per_10000": 6.2,
       "cospa_score": 0.49,
       "is_sample": false
     },
@@ -9801,29 +9755,6 @@
       },
       "per_1000": 2.77,
       "per_10000": 27.7,
-      "cospa_score": 0.45,
-      "is_sample": false
-    },
-    {
-      "id": "yahoo-furunavi_177417",
-      "source": "yahoo",
-      "category": "fruit",
-      "name": "ふるさと納税 かみのやまシュー 6個 シュークリーム 0048-2611 山形県上山市",
-      "municipality": "山形県上山市",
-      "shop": "ふるなび(ふるさと納税)",
-      "price": 8000,
-      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F177417.html",
-      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_177417",
-      "review_average": 4.51,
-      "review_count": 354,
-      "in_stock": true,
-      "amount": {
-        "kind": "count",
-        "unit": "個",
-        "value": 6
-      },
-      "per_1000": 0.75,
-      "per_10000": 7.5,
       "cospa_score": 0.45,
       "is_sample": false
     },
@@ -10744,6 +10675,29 @@
       },
       "per_1000": 30.77,
       "per_10000": 307.7,
+      "cospa_score": 0.2,
+      "is_sample": false
+    },
+    {
+      "id": "yahoo-furunavi_532370",
+      "source": "yahoo",
+      "category": "rice",
+      "name": "ふるさと納税 釜揚げ しらす(訳あり) 800g(200g×4P)【釜揚げ しらす シラス ちりめん じゃこ 海鮮 海産物 丼 おにぎり 具材 ご飯 おつま.. 香川県さぬき市",
+      "municipality": "香川県さぬき市",
+      "shop": "ふるなび(ふるさと納税)",
+      "price": 9000,
+      "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3788658&pid=892750502&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Ffurunavi%2F532370.html",
+      "image": "https://item-shopping.c.yimg.jp/i/l/furunavi_532370",
+      "review_average": 4.75,
+      "review_count": 8,
+      "in_stock": true,
+      "amount": {
+        "kind": "weight",
+        "unit": "g",
+        "value": 800.0
+      },
+      "per_1000": 88.89,
+      "per_10000": 888.9,
       "cospa_score": 0.2,
       "is_sample": false
     },
